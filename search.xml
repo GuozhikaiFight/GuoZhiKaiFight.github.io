@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo简单搭建过程以及使用命令</title>
+      <link href="/gkerblog/2022/06/07/Hexo%E7%AE%80%E5%8D%95%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/gkerblog/2022/06/07/Hexo%E7%AE%80%E5%8D%95%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h2><blockquote><ol><li>Node.js 安装完成后使用cmd执行 node -v 检查是否安装成功</li><li>下载cnpm 淘宝镜像源 npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a> 查看版本 cnpm -v</li><li>使用淘宝镜像源下载 hexo博客  cnpm install -g hexo-cli </li><li>查看hexo版本  hexo -v</li></ol></blockquote><hr><h2 id="创建空文件夹用于存放博客内容"><a href="#创建空文件夹用于存放博客内容" class="headerlink" title="创建空文件夹用于存放博客内容"></a>创建空文件夹用于存放博客内容</h2><blockquote><ol><li>hexo init  windows下使用命令</li><li>启动hexo服务 hexo s</li><li>新建博客 hexo n “名称”</li><li>重新生成博客 hexo clean  hexo g </li><li>下载用于推送到git的插件 cnpm install –save hexo-deployer-git</li><li>hexo d 推送到远端</li></ol></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java中的静态变量</title>
+      <link href="/gkerblog/2022/05/28/Java%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F/"/>
+      <url>/gkerblog/2022/05/28/Java%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Java中的静态变量"><a href="#Java中的静态变量" class="headerlink" title="Java中的静态变量"></a>Java中的静态变量</h2><blockquote><ul><li>Java中的静态变量也叫作类变量,被关键字static修饰 </li><li>静态变量可以不被赋值，java会分配一个初始值</li><li>静态变量命名规范：一般使用全字母大写与下划线进行分割</li><li>静态变量不会随着变量的创建而创建，属于类</li></ul></blockquote><h2 id="Java中的静态方法"><a href="#Java中的静态方法" class="headerlink" title="Java中的静态方法"></a>Java中的静态方法</h2><blockquote><ul><li>类方法，无this自引用使用，可操作形参与静态变量（自身的静态变量或者其他类的静态变量）</li></ul></blockquote><h2 id="Java中的静态方法的重载"><a href="#Java中的静态方法的重载" class="headerlink" title="Java中的静态方法的重载"></a>Java中的静态方法的重载</h2><blockquote></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>动态代理是基于什么原理？</title>
+      <link href="/gkerblog/2022/05/26/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%98%AF%E5%9F%BA%E4%BA%8E%E4%BB%80%E4%B9%88%E5%8E%9F%E7%90%86%EF%BC%9F/"/>
+      <url>/gkerblog/2022/05/26/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%98%AF%E5%9F%BA%E4%BA%8E%E4%BB%80%E4%B9%88%E5%8E%9F%E7%90%86%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="动态代理是基于什么原理？"><a href="#动态代理是基于什么原理？" class="headerlink" title="动态代理是基于什么原理？"></a>动态代理是基于什么原理？</h2><blockquote><p>从编程语言分类角度来讲，按照语言类型信息是在运行时检查，还是编译期检查分为动态类型和静态类型的编程语言 <br><br>不同类型变量赋值时，是否需要显示地（强制）进行类型转换可区分是否是所谓的强类型或弱类型语言。<br><br>Java语言是静态的强类型语言，但因为反射的存在，也具备部分动态语言的能力。</p></blockquote><h2 id="Java中的反射机制"><a href="#Java中的反射机制" class="headerlink" title="Java中的反射机制"></a>Java中的反射机制</h2><blockquote><p>反射机制是Java语言提供的一种基础功能，赋予程序在运行时的自省能力，通过反射我们可以直接操作类，或者对象，获取类的属性和方法，调用方法或者构造对象，甚至可以运行时修改类定义。</p></blockquote><h3 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h3><blockquote><p>运行时动态构建代理、动态处理代理方法调用的机制【包装RPC调用、AOP（面向切面编程）】</p></blockquote><h3 id="实现动态代理的方式"><a href="#实现动态代理的方式" class="headerlink" title="实现动态代理的方式"></a>实现动态代理的方式</h3><blockquote><p>JDK中主要利用反射机制、其他实现方式如：传说中更高性能的字节码操作机制、类似ASM、cglib、JavaSsist</p></blockquote><h3 id="AccessibleObject-setAccessible​"><a href="#AccessibleObject-setAccessible​" class="headerlink" title="AccessibleObject.setAccessible​"></a>AccessibleObject.setAccessible​</h3><blockquote></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AccessibleObject.setAccessible​(<span class="type">boolean</span> flag)   </span><br></pre></td></tr></table></figure><blockquote><ul><li>反射中需要显示更改setAccessible的值进行私有属性的获取、或者方法的获取，需要设置为true</li><li>O/R Mapping 框架中，为一个Java实体对象，运行时自动生成setter、getter逻辑</li><li>绕过API访问控制</li></ul></blockquote><blockquote><p>Java9以后，出于强封装性的考虑，对反射访问进行了限制，Jigsaw引入了Open的概念，只有当被反射操作的模块和指定的包对反射调用者模块Open，才能使用setAccessible</p></blockquote><h2 id="动态代理-1"><a href="#动态代理-1" class="headerlink" title="动态代理"></a>动态代理</h2><blockquote></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA基础面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA基础面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>String、StringBuilder、StringBuffer有什么区别</title>
+      <link href="/gkerblog/2022/05/26/String%E3%80%81StringBuilder%E3%80%81StringBuffer%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/"/>
+      <url>/gkerblog/2022/05/26/String%E3%80%81StringBuilder%E3%80%81StringBuffer%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="String、StringBuilder、StringBuffer有什么区别"><a href="#String、StringBuilder、StringBuffer有什么区别" class="headerlink" title="String、StringBuilder、StringBuffer有什么区别"></a>String、StringBuilder、StringBuffer有什么区别</h2><blockquote><p>Java每日一记1 内容更改 <br><br>Java8中新增的StringJoiner工具类</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">StringJoiner</span> <span class="variable">stringjoiner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringJoiner</span>(<span class="string">&quot;分割符&quot;</span>);</span><br><span class="line"><span class="type">StringJoiner</span> <span class="variable">stringjoiner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringJoiner</span>(<span class="string">&quot;分割符&quot;</span>,<span class="string">&quot;前缀delimiter&quot;</span>,<span class="string">&quot;后缀suffix&quot;</span>);</span><br></pre></td></tr></table></figure><blockquote><ol><li>String 类在java中是典型的immutable类 类被声明为final,属性也被final修饰，由于不可变性，对于字符串拼接、裁剪等动作时，都会产生新的String对象。</li><li>StringBuffer 为解决上述拼接中产生太多对象问题而提供的类，本质上是一个线程安全的可修改字符序列</li><li>StringBuilder 在能力上与StringBuffer没有本质区别，但去掉了线程安全的部分。</li></ol></blockquote><blockquote><ul><li>String 是典型的immutable类的典型实现，原生保证了线程安全<blockquote><ul><li>(1) String的创建机理 <br><br>由于String在Java世界中使用过于频繁，Java为了避免在一个系统中产生大量的String对象，引入了字符串常量池。其运行机制是：创建一个字符串时，首先检查池中是否有值相同的字符串对象，如果有则不需要创建直接从池中刚查找到的对象引用；如果没有则新建字符串对象，返回对象引用，并且将新创建的对象放入池中。但是，通过new方法创建的String对象是不检查字符串池的，而是直接在堆区或栈区创建一个新的对象，也不会把对象放入池中。上述原则只适用于通过直接量给String对象引用赋值的情况。</li></ul></blockquote></li></ul></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">举例：</span><br><span class="line"><span class="type">String</span> <span class="variable">str1</span> <span class="operator">=</span> <span class="string">&quot;123&quot;</span>; <span class="comment">//通过直接量赋值方式，放入字符串常量池</span></span><br><span class="line"><span class="type">String</span> <span class="variable">str2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">String</span>(“<span class="number">123</span>”);<span class="comment">//通过new方式赋值方式，不放入字符串常量池</span></span><br></pre></td></tr></table></figure><blockquote><blockquote><ul><li>注意：String提供了inter()方法。调用该方法时，如果常量池中包括了一个等于此String对象的字符串（由equals方法确定），则返回池中的字符串。否则，将此String对象添加到池中，并且返回此池中对象的引用。</li><li>(2) String的特性 <br><br>[A] 不可变。是指String对象一旦生成，则不能再对它进行改变。不可变的主要作用在于当一个对象需要被多线程共享，并且访问频繁时，可以省略同步和锁等待的时间，从而大幅度提高系统性能。不可变模式是一个可以提高多线程程序的性能，降低多线程程序复杂度的设计模式。<br><br>[B] 针对常量池的优化。当2个String对象拥有相同的值时，他们只引用常量池中的同一个拷贝。当同一个字符串反复出现时，这个技术可以大幅度节省内存空间。</li></ul></blockquote><ul><li>StringBuffer 的线程安全是通过把各种修改数据的方法都加上了synchronized关键字实现的</li><li>StringBuffer与StringBuilder底层都是利用可修改的char数组（java9以后是byte数组）区别是最终方法是否加了synchronized</li></ul></blockquote><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA基础面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA基础面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>强引用、软引用、弱引用、幻象引用有什么区别?</title>
+      <link href="/gkerblog/2022/05/26/%E5%BC%BA%E5%BC%95%E7%94%A8%E3%80%81%E8%BD%AF%E5%BC%95%E7%94%A8%E3%80%81%E5%BC%B1%E5%BC%95%E7%94%A8%E3%80%81%E5%B9%BB%E8%B1%A1%E5%BC%95%E7%94%A8%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/"/>
+      <url>/gkerblog/2022/05/26/%E5%BC%BA%E5%BC%95%E7%94%A8%E3%80%81%E8%BD%AF%E5%BC%95%E7%94%A8%E3%80%81%E5%BC%B1%E5%BC%95%E7%94%A8%E3%80%81%E5%B9%BB%E8%B1%A1%E5%BC%95%E7%94%A8%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="强引用、软引用、弱引用、幻象引用有什么区别"><a href="#强引用、软引用、弱引用、幻象引用有什么区别" class="headerlink" title="强引用、软引用、弱引用、幻象引用有什么区别"></a>强引用、软引用、弱引用、幻象引用有什么区别</h2><blockquote><p>Java中将除基本数据类型意外的各类对象的对象引用，按其生命周期的长短，将其分为四类</p></blockquote><h3 id="各种引用"><a href="#各种引用" class="headerlink" title="各种引用"></a>各种引用</h3><blockquote><p>不同引用类型体现的是对象不同的可达性和对垃圾收集的影响 <br></p><ol><li>强引用 （Strong reference）<blockquote><ol><li>即普通的对象引用，存在强引用指向的对象，垃圾收集器不会碰这种对象</li><li>通过new 关键字创建的对象所关联的引用就是强引用，当JVM内存空间不足时，JVM宁愿抛出OutOfMemoryError运行时错误，也不随意回收强引用对象。</li><li>普通对象，如果没有其他引用关系，只要超过了引用的作用域或显式将强引用赋值为null，就是可以被垃圾收集。</li></ol></blockquote></li><li>软引用 （SoftReference）<blockquote><ul><li> 相对于强引用来讲弱化一点的引用,当JVM认为内存不足时，才会去试图回收软引用对象，JVM会确保在抛出OutOfMemoryError之前，清理软引用指向对象。</li><li>一般应用于实现内存敏感的缓存</li></ul></blockquote></li><li>弱引用 （WeakReference）<blockquote><ul><li>提供一种访问在弱引用状态下对象的途径 ，不管当前内存空间是否足够，都会回收它的内存</li></ul></blockquote></li><li>幻象引用（虚引用）（PhantomReference）<blockquote><ul><li>无法通过该引用获取对象，仅仅提供一种确保对象被finalize以后，做某些事情的机制</li></ul></blockquote></li></ol></blockquote><h3 id="引用队列-ReferenceQueue"><a href="#引用队列-ReferenceQueue" class="headerlink" title="引用队列 ReferenceQueue"></a>引用队列 ReferenceQueue</h3><blockquote><p>我们在创建各种引用并关联到相应对象时，可选择是否需要关联引用队列，JVM会在特定时机将引用enqueue到队列中，我们可以从队列里获取引用并进行相关后续逻辑。</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Object</span> <span class="variable">counter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Object</span>();</span><br><span class="line"><span class="type">ReferenceQueue</span> <span class="variable">refQueue</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ReferenceQueue</span>&lt;&gt;();</span><br><span class="line">PhantomReference&lt;Object&gt; p = <span class="keyword">new</span> <span class="title class_">PhantomReference</span>&lt;&gt;(counter, refQueue);</span><br><span class="line">counter = <span class="literal">null</span>;</span><br><span class="line">System.gc();</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// Remove是一个阻塞方法，可以指定timeout，或者选择一直阻塞</span></span><br><span class="line">    Reference&lt;Object&gt; ref = refQueue.remove(<span class="number">1000L</span>);</span><br><span class="line">    <span class="keyword">if</span> (ref != <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="comment">// do something</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">    <span class="comment">// Handle it</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>软引用，弱引用可与引用队列联合使用，当相应引用的对象被垃圾回收器回收，JVM会把软引用加入到关联的引用队列中。 <br><br>虚引用必须要与引用队列联合使用，程序可通过判断引用队列中师傅已经加入了虚引用，来了解被引用的对象是否将要被垃圾回收，若已被加入到队列，name可在被引用的对象在内存回收之前采取一些程序行动。</p></blockquote><hr><h3 id="对象声明周期与不同可达性状态"><a href="#对象声明周期与不同可达性状态" class="headerlink" title="对象声明周期与不同可达性状态"></a>对象声明周期与不同可达性状态</h3><blockquote><ul><li>强可达 （Strongly Reachable）<blockquote><ul><li>当一个对象可以有一个或多个线程不通过各种引用访问到的情况（新创建一个对象，那么创建它的线程对它就是强可达）</li></ul></blockquote></li><li>软可达 (Softly Reachable)<blockquote><ul><li>只能通过软引用才能访问到对象的状态</li></ul></blockquote></li><li>弱可达 (Weakly Reachable)<blockquote><ul><li>无法通过强引用或软引用访问，只能通过弱引用访问时的状态</li></ul></blockquote></li><li>幻象可达 (Phantom Reachable)<blockquote><ul><li>没有强、软、弱引用关联，并且finalize过了，只有幻象引用指向这个对象</li></ul></blockquote></li><li>不可达 (unreachable)<blockquote><ul><li>对象被清除</li></ul></blockquote></li></ul></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA基础面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA基础面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>final finally finalize 有何不同?</title>
+      <link href="/gkerblog/2022/05/26/final-finally-finalize-%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/"/>
+      <url>/gkerblog/2022/05/26/final-finally-finalize-%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="final-finally-finalize-有何不同"><a href="#final-finally-finalize-有何不同" class="headerlink" title="final finally finalize 有何不同"></a>final finally finalize 有何不同</h2><hr><h3 id="final"><a href="#final" class="headerlink" title="final"></a>final</h3><blockquote><ul><li>final修饰符可修饰类、方法、变量</li><li>类无法被继承、方法不可被重写、变量不可被修改</li><li>final关键字经常大量出现在源码或第三方类库中，可有效避免API使用者更改基础功能，在并发编程中有利于减少额外的同步开销。</li><li>final只可约束相关变量引用不可以被赋值，但final修饰的对象行为不会被final影响</li></ul></blockquote><h3 id="finally"><a href="#finally" class="headerlink" title="finally"></a>finally</h3><blockquote><ul><li>保证重点代码一定被执行的一种机制</li><li>以下代码finally不会被执行</li></ul></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    System.exit(<span class="number">1</span>);      </span><br><span class="line">&#125;<span class="keyword">catch</span>()&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">finally</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;print from finally&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="finalize"><a href="#finalize" class="headerlink" title="finalize"></a>finalize</h3><blockquote><p>保证对象在被垃圾收集前完成特定资源的回收，java9开始被标记为deprecated（不赞成）</p></blockquote><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA基础面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA基础面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java 中的 Exception 与 Error</title>
+      <link href="/gkerblog/2022/05/26/java-%E4%B8%AD%E7%9A%84-Exception-%E4%B8%8E-Error/"/>
+      <url>/gkerblog/2022/05/26/java-%E4%B8%AD%E7%9A%84-Exception-%E4%B8%8E-Error/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Exception-Error区别"><a href="#Exception-Error区别" class="headerlink" title="Exception Error区别"></a>Exception Error区别</h2><hr><h3 id="Java中的Throwable-Exception-Error设计与分类"><a href="#Java中的Throwable-Exception-Error设计与分类" class="headerlink" title="Java中的Throwable Exception Error设计与分类"></a>Java中的Throwable Exception Error设计与分类</h3><blockquote><p>典型回答：Exception 与 Error都继承了Throwable类，在Java中只有Throwable类型的实例才可以被抛出（throw）或者捕获（catch）<br><br>Exception是程序正常运行中可预料的意外情况，可能并应当进行捕获。<br></p><blockquote><p>checked （可检查异常）：编译期的一部分<br><br>unchecked （不可检查异常）：运行时异常类似NullPointerException 可通过相关逻辑进行避免<br><br>Error 是程序处于非正常、不可恢复状态，所以不便进行捕获。</p></blockquote></blockquote><hr><h3 id="常见Exception-与-Error"><a href="#常见Exception-与-Error" class="headerlink" title="常见Exception 与 Error"></a>常见Exception 与 Error</h3><blockquote><p>Exception (checked Exception)</p><blockquote><ol><li>IOException </li></ol></blockquote></blockquote><blockquote><p>Exception (RuntimeException)</p><blockquote><ol><li>NullPointerException （空指针）</li><li>ClassCastException（类型转换异常）</li><li>SecurityException （）</li><li>ArrayIndexOutofBoundsException</li></ol></blockquote></blockquote><blockquote><p>Error (虚拟机错误：VirtualMachineError) </p><blockquote><ol><li>OutOfMemoryError （内存溢出错误）</li><li>StackOverflowError （堆栈溢出错误）</li></ol></blockquote></blockquote><blockquote><p>Error (链接错误 LinkageError) </p><blockquote><ol><li>NoClassDefFoundError </li><li>UnsatisfiedLinkError</li><li>ExceptionInIInitiallizerError</li></ol></blockquote></blockquote><hr><h3 id="面试题-NoClassDefFoundError-与-ClassNotFoundException"><a href="#面试题-NoClassDefFoundError-与-ClassNotFoundException" class="headerlink" title="面试题 NoClassDefFoundError 与 ClassNotFoundException"></a>面试题 NoClassDefFoundError 与 ClassNotFoundException</h3><blockquote><p>一个Error一个Exception <br><br>ClassNotFoundException 是在java中显示类加载时（编译过程中）产生的，产生原因如下</p><blockquote><ol><li>Class.forName()</li><li>ClassLoader中的findSystemClass()</li><li>ClassLoader中的loadClass()<br></li></ol></blockquote></blockquote><blockquote><p>NoClassDefFoundError <br><br>错误发生的原因是因为Java虚拟机在编译期间可找到合适的类，但在运行时找不到合适的类</p></blockquote><h3 id="异常处理原则"><a href="#异常处理原则" class="headerlink" title="异常处理原则"></a>异常处理原则</h3><blockquote><ol><li>尽可能不要捕获泛泛Exception,代码中存在的具体可确定异常类型需要进行具体类型的捕获。</li></ol></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    <span class="comment">//</span></span><br><span class="line">    Thread.sleep(<span class="number">1000L</span>);</span><br><span class="line">&#125;<span class="keyword">catch</span>()&#123;</span><br><span class="line">    <span class="comment">// do something</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><ol start="2"><li>生吞异常,无日志输出</li></ol></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    <span class="comment">//业务代码</span></span><br><span class="line">&#125;<span class="keyword">catch</span>(Exception e)&#123;</span><br><span class="line">    e.printStackTrace();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA基础面试题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA基础面试题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JVM-03-java虚拟机如何加载class类</title>
+      <link href="/gkerblog/2022/05/19/JVM-03-java%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BDclass%E7%B1%BB/"/>
+      <url>/gkerblog/2022/05/19/JVM-03-java%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BDclass%E7%B1%BB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java中的基本数据类型"><a href="#Java中的基本数据类型" class="headerlink" title="Java中的基本数据类型"></a>Java中的基本数据类型</h1><blockquote><p>为什么在谈论Java虚拟机时如何加载class类时会优先谈关于Java的数据类型的话题？</p><blockquote><p>在java中除去基本数据类型还存在引用数据类型，但基本数据类型已经由Java虚拟机预先定义完成，刨除基本数据类型后，存在的引用数据类型分为以下四类</p><blockquote><ul><li>类</li><li>接口</li><li>数组</li><li>泛型参数<br>真正经由jvm进行加载的引用类型只有类、与接口两类，并且都有对应的字节流。而jvm类加载过程，实际上是查找对应字节流，并将其加载到内存中调用的过程。</li></ul></blockquote></blockquote></blockquote><hr><h1 id="Java中的类主要加载过程"><a href="#Java中的类主要加载过程" class="headerlink" title="Java中的类主要加载过程"></a>Java中的类主要加载过程</h1><blockquote><p>类的加载过程主要有 <br></p><ul><li>加载 :  jvm虚拟机借助类加载器查找类字节流文件并创建的过程</li><li>链接 :  将创建完成的类合并到虚拟机中使类可以执行的过程<blockquote><ul><li>验证 ：确保加载的类满足java虚拟机约束规范</li><li>准备 ：为被加载类的静态字段分配内存,部分java虚拟机会生构造与其他类层次相关的数据结构</li><li>解析 ：将符号引用解析为实际引用</li></ul></blockquote></li><li>初始化 ：为标记为常量值的字段赋值，以及执行<code>&lt;clinit&gt;</code>的过程</li></ul></blockquote><hr><h1 id="Java中的类加载过程-加载-jvm中的类加载器"><a href="#Java中的类加载过程-加载-jvm中的类加载器" class="headerlink" title="Java中的类加载过程 - 加载 jvm中的类加载器"></a>Java中的类加载过程 - 加载 jvm中的类加载器</h1><blockquote><ul><li>启动类加载器 【bootstrap class loader】<br><br>启动类加载器由C++ 编写，在java中无对应对象</li><li>扩展类加载器 【extension class Loader】 （父类为启动类加载器）<br></li><li>应用类加载器 【application class loader】（父类扩展类加载器）<br></li></ul></blockquote><hr><h3 id="双亲委派机制"><a href="#双亲委派机制" class="headerlink" title="双亲委派机制"></a>双亲委派机制</h3><blockquote><p>当类加载器接到加载java类加载请求后，当前类加载器会首先将请求转发给其父类的类加载器，父类的类加载器会尝试进行类的查找，当无法找到对应类的字节流后会将请求重新发送给当前类加载器，并尝试进行类字节流信息的查找。</p></blockquote><hr><h3 id="java9之前各种类加载器加载的内容"><a href="#java9之前各种类加载器加载的内容" class="headerlink" title="java9之前各种类加载器加载的内容"></a>java9之前各种类加载器加载的内容</h3><blockquote><ul><li>启动类加载器 : jre lib目录下jar包中的类 以及由虚拟机参数 -Xbootclasspath指定的类</li><li>扩展类加载器 : jre lib ext目录下jar包中的类 以及系统变量 java.ext.dirs指定的类</li><li>应用类加载器 : 负责加载应用程序路径（虚拟机参数 -cp/-classpath、系统变量java.class.path或环境变量classpath所指定的路径）下的类<br></li></ul></blockquote><hr><h3 id="java9模块系统"><a href="#java9模块系统" class="headerlink" title="java9模块系统"></a>java9模块系统</h3><blockquote><p>扩展类加载器更名为平台类加载器 除javase中几个关键模块 (javabase)其他均由平台加载器加载</p></blockquote><hr><h1 id="Java中的类加载过程-链接"><a href="#Java中的类加载过程-链接" class="headerlink" title="Java中的类加载过程 - 链接"></a>Java中的类加载过程 - 链接</h1><blockquote><ul><li>链接-准备过程中当引用此类本身的方法，属性或引用其他方法、字段时，Java编译器会生成一个符号引用。</li><li>链接-解析、解析过程中当符号引用指向一个未被加载的类、或者未被加载类的字段或方法时，解析将触发这个类的加载（未必触发这个类的链接以及初始化）</li></ul></blockquote><hr><h1 id="Java中的类加载过程-初始化"><a href="#Java中的类加载过程-初始化" class="headerlink" title="Java中的类加载过程 - 初始化"></a>Java中的类加载过程 - 初始化</h1><blockquote><p><code>ConstantValue 常量值</code> <br><br>在Java代码中，如果在初始化一个静态字段时直接对其声明、赋值，并且该静态字段被final修饰，数据类型为基本数据类型或字符串时，Java编译器会将其标记为常量值，初始化直接由虚拟机完成。<br><br><code>&lt;clinit&gt;</code> <br><br>除上述之外的直接赋值操作，以及所有静态代码块中的代码，会被java编译器置于同一方法中，并被命名为<code>&lt;clinit&gt;</code><br><br>类初始化完成后，才会成为可执行状态。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> JVM </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JVM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java中的注解与反射</title>
+      <link href="/gkerblog/2022/05/15/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/"/>
+      <url>/gkerblog/2022/05/15/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="注解-Annotation"><a href="#注解-Annotation" class="headerlink" title="注解 Annotation"></a>注解 Annotation</h2><blockquote><ul><li>基本格式： @ 注释名</li><li>使用位置： package class method filed上</li></ul></blockquote><h3 id="内置注解-Java本身自带的注解"><a href="#内置注解-Java本身自带的注解" class="headerlink" title="内置注解(Java本身自带的注解)"></a>内置注解(Java本身自带的注解)</h3><blockquote><ul><li>@Override 重写 不做解释</li><li>@Deprecated 不鼓励使用这样的元素</li><li>@SuppressWarnings 镇压警告信息 可传参</li></ul></blockquote><h3 id="元注解-解释其他注解的注解"><a href="#元注解-解释其他注解的注解" class="headerlink" title="元注解 解释其他注解的注解"></a>元注解 解释其他注解的注解</h3><blockquote><ul><li>@Target 描述注解使用范围</li><li>@Retention Source &lt; Class &lt; Runtime</li><li>@Document 注解将被包含在javadoc中</li><li>@Inherited 子类可继承父类中的该注解</li></ul></blockquote><h3 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h3><blockquote><ul><li>自定义注解格式 修饰符 @interface 注解名{定义内容}</li></ul></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> CeshiAnnotation&#123;</span><br><span class="line">    <span class="comment">//参数类型 参数名 ps:自定义注解的格式跟接口中的方法定义类似但实际意义不同</span></span><br><span class="line">    String <span class="title function_">value</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="反射-reflection"><a href="#反射-reflection" class="headerlink" title="反射 reflection"></a>反射 reflection</h2><h3 id="Java中的反射机制"><a href="#Java中的反射机制" class="headerlink" title="Java中的反射机制"></a>Java中的反射机制</h3><blockquote><ul><li>增加了Java语言的动态机制，反射机制允许程序执行期间借助Reflection API获取类的内部信息</li><li>java语言中，反射机制的出现使得class文件在程序执行过程中也可获取类的全部信息</li><li>反射精髓在于“反”字，可通过对象反推获取相关类信息</li></ul></blockquote><h3 id="Java中获取Class对象实例的方式"><a href="#Java中获取Class对象实例的方式" class="headerlink" title="Java中获取Class对象实例的方式"></a>Java中获取Class对象实例的方式</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    Class&lt;?&gt; c1 = Person.class;</span><br><span class="line">    System.out.pringln(c1);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    <span class="type">Person</span> <span class="variable">person</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line">    Class&lt;?&gt; c1 = person.getClass();</span><br><span class="line">    System.out.pringln(c1);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span>&#123;</span><br><span class="line">    Class&lt;?&gt; c1 = Class.forName(<span class="string">&quot;类名路径&quot;</span>);</span><br><span class="line">    System.out.pringln(c1);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//此方法只对Java基本数据类型的包装类有效</span></span><br><span class="line">Class&lt;?&gt; c1 = Integer.TYPE;</span><br></pre></td></tr></table></figure><h2 id="哪些类型可以有Class类"><a href="#哪些类型可以有Class类" class="headerlink" title="哪些类型可以有Class类"></a>哪些类型可以有Class类</h2><blockquote><ul><li>java中的对象基本都可以获取到class类型，例如 内部类、接口、数组、枚举、注解、基本数据类型、void</li></ul></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GIT知识</title>
+      <link href="/gkerblog/2022/05/08/GIT%E7%9F%A5%E8%AF%86/"/>
+      <url>/gkerblog/2022/05/08/GIT%E7%9F%A5%E8%AF%86/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="git目录文件"><a href="#git目录文件" class="headerlink" title=".git目录文件"></a>.git目录文件</h2><blockquote><ul><li>HEAD文件<blockquote><p> 存放当前Git工作指向分支 ：ref: refs/heads/master 切换路径后会发生变化</p></blockquote></li><li>config文件 <blockquote><p>本地仓库配置信息，会设置在config文件中</p></blockquote></li><li>refs文件 <blockquote><ul><li>1 heads 分支 heads分支文件中会存在多个文件，每个文件中存放的类似指针，会指向相应commit </li><li>2 tags 里程碑</li></ul></blockquote></li><li>objects 存放对象 </li></ul></blockquote><h2 id="git对象之间的关系-commit-tree-blob"><a href="#git对象之间的关系-commit-tree-blob" class="headerlink" title="git对象之间的关系 commit tree blob"></a>git对象之间的关系 commit tree blob</h2><blockquote><ul><li>commit 每次变更后会产生一个commit对象 一个commit对应一棵树 tree</li><li>tree 视图 当前commit对应项目此时全部的文件快照 (文件夹)</li><li>blob 文件 文件内容相同git中只有一份 与文件名无关</li></ul></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git 基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GIT基础命令</title>
+      <link href="/gkerblog/2022/04/30/GIT%E5%9F%BA%E7%A1%80/"/>
+      <url>/gkerblog/2022/04/30/GIT%E5%9F%BA%E7%A1%80/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Windows中的cmd命令"><a href="#Windows中的cmd命令" class="headerlink" title="Windows中的cmd命令"></a>Windows中的cmd命令</h2><blockquote><ul><li>cls 清屏</li></ul></blockquote><h2 id="GIT基础命令"><a href="#GIT基础命令" class="headerlink" title="GIT基础命令"></a>GIT基础命令</h2><blockquote><ul><li> git config –global/local/system 设置命令除了作用域不一致其他都相同</li><li>1 git –verison 查看GT版本</li><li>2 git config –global –list 查看git用户信息</li><li>3 git config –global user.name ‘your_name’</li><li>4 git config –global user.email ‘your_email@邮箱地址’</li></ul></blockquote><h2 id="GIT-命令-config-命令"><a href="#GIT-命令-config-命令" class="headerlink" title="GIT 命令 config 命令"></a>GIT 命令 config 命令</h2><h4 id="local参数设置优先级高于global"><a href="#local参数设置优先级高于global" class="headerlink" title="local参数设置优先级高于global"></a>local参数设置优先级高于global</h4><blockquote><ul><li>1 git config –local  local只对某个仓库有效<blockquote><ul><li>1 git config –local user.name 查看当前仓库配置的用户名</li><li>2 git config –local user.name ‘需要设置的用户名’ 修改配置信息用户名</li></ul></blockquote></li><li>2 git config –global global对当前用户下所有仓库有效</li><li>3 git config –system system对系统所有登录的用户有效</li></ul></blockquote><h2 id="显示-config-配置"><a href="#显示-config-配置" class="headerlink" title="显示 config 配置"></a>显示 config 配置</h2><blockquote><ul><li>1 git config –list –local</li><li>2 git config –list –global</li><li>3 git config –list –system </li></ul></blockquote><h2 id="创建Git仓库"><a href="#创建Git仓库" class="headerlink" title="创建Git仓库"></a>创建Git仓库</h2><blockquote><p>新建项目直接使用Git管理</p><ul><li>1 进入新项目目标文件夹</li><li>2 git init project_name </li></ul></blockquote><h2 id="使用Git新增并提交文件"><a href="#使用Git新增并提交文件" class="headerlink" title="使用Git新增并提交文件"></a>使用Git新增并提交文件</h2><blockquote><ul><li>1 git add 文件名 管控需要新增的文件</li><li>2 git commit -m ‘新增理由’  提交新增的文件</li><li>3 git status git状态 </li></ul></blockquote><h2 id="使用Git对修改的文件提交到暂存区"><a href="#使用Git对修改的文件提交到暂存区" class="headerlink" title="使用Git对修改的文件提交到暂存区"></a>使用Git对修改的文件提交到暂存区</h2><blockquote><ul><li>1 git add -u 被git管控的文件提交到暂存区 -u update</li></ul></blockquote><h2 id="Git-对文件重命名操作"><a href="#Git-对文件重命名操作" class="headerlink" title="Git 对文件重命名操作"></a>Git 对文件重命名操作</h2><blockquote><ul><li>1 Git新增重命名文件并删除原名称文件<blockquote><ul><li>1 git rm 文件名称  </li><li>2 git add 新文件名称 </li><li>3 git commit -m “”</li></ul></blockquote></li><li>2 Git一条命令替换上面三条<blockquote><ul><li>1  git mv 旧文件名 新文件名</li></ul></blockquote></li></ul></blockquote><h2 id="查看Git日志或版本历史-git-log-命令"><a href="#查看Git日志或版本历史-git-log-命令" class="headerlink" title="查看Git日志或版本历史 git log 命令"></a>查看Git日志或版本历史 git log 命令</h2><p>图形化查看 –graph </p><blockquote><ul><li>1 git log –oneline 简短历史</li><li>2 git log -n条数 –oneline 设置选择查看条数的简短历史</li><li>3 git log –oneline –all 查看全部分支的历史</li><li>4 git log –oneline –all -n条数  查看全部分支的历史的某几条</li></ul></blockquote><h2 id="Git-分支操作"><a href="#Git-分支操作" class="headerlink" title="Git 分支操作"></a>Git 分支操作</h2><blockquote><ul><li>1 git branch -v 查看本地git有多少分支</li><li>2 git checkout 分支名称 切换分支</li></ul></blockquote><h2 id="Git暂存区"><a href="#Git暂存区" class="headerlink" title="Git暂存区"></a>Git暂存区</h2><blockquote><ul><li>Git暂存区中的文件可以记录文件每次变更的地方</li></ul></blockquote><h2 id="Git-通过文件Hash数值查看文件类型和内容"><a href="#Git-通过文件Hash数值查看文件类型和内容" class="headerlink" title="Git 通过文件Hash数值查看文件类型和内容"></a>Git 通过文件Hash数值查看文件类型和内容</h2><blockquote><ul><li>git cat-file -t hash值 类型</li><li>git cat-file -p hash值 内容</li></ul></blockquote><h2 id="Git-web版帮助文档查看"><a href="#Git-web版帮助文档查看" class="headerlink" title="Git web版帮助文档查看"></a>Git web版帮助文档查看</h2><p>git help –web 命令 ps: git help –web log</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Git 基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git 基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JVM-01-java代码是如何运行的</title>
+      <link href="/gkerblog/2022/04/27/JVM-01-java%E4%BB%A3%E7%A0%81%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/"/>
+      <url>/gkerblog/2022/04/27/JVM-01-java%E4%BB%A3%E7%A0%81%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>01 | JAVA中的JVM是如何识别运行高级语言所编写的代码的？</p><hr><p>三个问题</p><blockquote><ul><li><ol><li>我们对于JAVA所宣传的“一次编译，到处运行”是怎样理解的呢？</li></ol></li><li><ol start="2"><li>JAVA作为一门高度抽象的语言，在经过成熟的IDE编写后，那些能被我们所看懂的代码，到底是如何在JVM中运行的呢？</li></ol></li><li><ol start="3"><li>JAVA语言到底是编译执行还是解释执行？</li></ol></li></ul></blockquote><hr><h3 id="Write-once-run-anywhere"><a href="#Write-once-run-anywhere" class="headerlink" title="Write once, run anywhere"></a>Write once, run anywhere</h3><blockquote><p>我们在学习JVM的时候，绕不过去的是JAVA中关于JRE（Java Runtime Environment ）与JDK(Java Development Kit )的定义<strong>JVM</strong>位于JRE中 JDK又包含JRE,（Write once, run anywhere）纠其实现原因也绕不JVM,不同于C++，(C++可将编写完成的代码直接编译成机器码)Java代码经过程序员（人类）的编写后，产生的代码计算机并不能看懂，Java通过javac命令的编译后，会将由人类可以看懂的程序指令编译为JVM虚拟机可以看懂的 <strong>.class</strong> 结尾的字节码文件，再由JVM虚拟机将其翻译成计算机可以看懂的 <strong>机器码</strong>，并最终执行。JVM可以将程序员所编写的代码部署到不同系统的计算机上，整个过程，开发人员只需要编写一次代码，并将.class文件交给不同系统中的JVM即可，充分与硬件环境之间进行解耦操作。</p></blockquote><hr><h3 id="JVM虚拟机中是如何运行字节码文件的？"><a href="#JVM虚拟机中是如何运行字节码文件的？" class="headerlink" title="JVM虚拟机中是如何运行字节码文件的？"></a>JVM虚拟机中是如何运行字节码文件的？</h3><blockquote><p><em><strong>摘自极客时间《深入拆解JAVA虚拟机 》</strong></em> <br/><br>在主流Java版本中以HotSpot虚拟机为例，JVM虚拟机在接收到class字节码文件后，首先通过类加载器（Class-Loader）加载字节码文件，（ps:省略具体加载过程）加载后的Java类会被存放于方法区，代码运行过程中会JVM会执行方法区中的代码。<br/><br> JVM在运行Java代码时，会在计算机内存中划分栈与堆来存储数据，在栈中会分为面向Java方法的Java方法栈，本地方法的本地方法栈，以及存放各个线程执行位置的PC寄存器</p></blockquote><div align=center><img src="https://static001.geekbang.org/resource/image/ab/77/ab5c3523af08e0bf2f689c1d6033ef77.png#pic_center" class="lazyload" data-srcset="https://static001.geekbang.org/resource/image/ab/77/ab5c3523af08e0bf2f689c1d6033ef77.png#pic_center" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="400"></div><br/><h3 id="JVM虚拟机如何将字节码文件翻译为机器码？"><a href="#JVM虚拟机如何将字节码文件翻译为机器码？" class="headerlink" title="JVM虚拟机如何将字节码文件翻译为机器码？"></a>JVM虚拟机如何将字节码文件翻译为机器码？</h3><blockquote><p>在HotSpot虚拟机中，翻译为机器码的过程有两种形式</p><blockquote><ul><li>解释执行 ：将字节码逐条翻译并执行</li><li>即使编译（JUST-In-Time compilation JIT） ： 将字节码全部编译完成机器码后执行</li></ul></blockquote></blockquote><div align=center><img src="https://static001.geekbang.org/resource/image/5e/3b/5ee351091464de78eed75438b6f9183b.png#pic_center" class="lazyload" data-srcset="https://static001.geekbang.org/resource/image/5e/3b/5ee351091464de78eed75438b6f9183b.png#pic_center" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" width="400"></div><br/><blockquote><p>HotSpot默认采用混合模式（-Xmixed）进行编译,通过内置的两个不同的JIT compiler 即 C1  C2 以及 Graal jaotc工具等 内置多个编译器是为了可让用户针对不同的需求进行相应的取舍，C1 为Client 模式，适用于对启动速度敏感的应用，C2对应Server模式，除了常见的Java使用模式外，还有一种新的编译方式，即所谓的AOT(Ahead-of-Time Compilation),直接将字节码编译成机器码。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> JVM </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JVM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java每日一记</title>
+      <link href="/gkerblog/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/"/>
+      <url>/gkerblog/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Java8中新增的StringJoiner工具类"><a href="#Java8中新增的StringJoiner工具类" class="headerlink" title="Java8中新增的StringJoiner工具类"></a>Java8中新增的StringJoiner工具类</h2><blockquote><p>2022年5月26日15:35:21 <br><br>Java8中新增的StringJoiner工具类</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">StringJoiner</span> <span class="variable">stringjoiner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringJoiner</span>(<span class="string">&quot;分割符&quot;</span>);</span><br><span class="line"><span class="type">StringJoiner</span> <span class="variable">stringjoiner</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringJoiner</span>(<span class="string">&quot;分割符&quot;</span>,<span class="string">&quot;前缀delimiter&quot;</span>,<span class="string">&quot;后缀suffix&quot;</span>);</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JAVA基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Spring</title>
+      <link href="/gkerblog/2021/03/20/Spring/"/>
+      <url>/gkerblog/2021/03/20/Spring/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Spring初识（一）"><a href="#Spring初识（一）" class="headerlink" title="Spring初识（一）"></a>Spring初识（一）</h2><hr><h3 id="控制反转（IOC）与依赖注入（DI）"><a href="#控制反转（IOC）与依赖注入（DI）" class="headerlink" title="控制反转（IOC）与依赖注入（DI）"></a>控制反转（IOC）与依赖注入（DI）</h3><p>提到Spring框架，不管是网上的资料或者是自己探索，在学习过程中避不开的两个概念一个是<strong>控制反转（IOC）</strong> 另一个是 <strong>依赖注入（DI）</strong> 但大都是讲述何为控制反转与依赖注入，最典型的代码是</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//由 B 实体中通过new 直接进行对象的声明与赋值</span><br><span class="line">B &#123;</span><br><span class="line">    A a = new A();</span><br><span class="line">&#125;</span><br><span class="line">//在 B 实体中通过set方法实现对对象的赋值</span><br><span class="line">B&#123;</span><br><span class="line">    A a;</span><br><span class="line">    public void setA(A a)&#123;</span><br><span class="line">        this.a=a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我也很迷惑采用<strong>IOC</strong>的好处，直到 <a href="https://www.zhihu.com/question/23277575/answer/24259844">https://www.zhihu.com/question/23277575/answer/24259844</a> 看到这篇文章</p><hr><h3 id="IOC的好处"><a href="#IOC的好处" class="headerlink" title="IOC的好处"></a>IOC的好处</h3><p>1.资源可由第三方直接进行配置与管理 **(IOC容器)**，这里所说的第三方是指不属于使用资源的双方。  </p><p>2.降低使用资源双方的依赖程度。</p><h3 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h3><p>1.生活中的网购，我们购买方需要买东西的时候（资源调用者），要借助于网购平台（第三方），而不是提供商品的工厂（资源提供者），反之，工厂想要卖物品时也只需跟第三方取得联系就可以。网购平台也可集中管理这些商品（bean）。<br>2.支付宝在网购交易流程中也属于一个第三方（IOC容器）。</p><h3 id="IOC-与-DI-的产生"><a href="#IOC-与-DI-的产生" class="headerlink" title="IOC 与 DI 的产生"></a>IOC 与 DI 的产生</h3><p>控制反转：资源双方互不依赖，资源调用时不依赖双方，活动由第三方负责管理。  </p><p>依赖注入：资源双方一方开放接口，在需要的时候，能够将另一注入进来。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Spring </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> freemark </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>TomCat杂项</title>
+      <link href="/gkerblog/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/"/>
+      <url>/gkerblog/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Tomcat杂项"><a href="#Tomcat杂项" class="headerlink" title="Tomcat杂项"></a>Tomcat杂项</h2><hr><p>Tomcat简单来讲是一个Web服务器，同时也是一个存放<strong>JSP</strong>与<strong>SERLVET</strong>的容器</p><hr><h3 id="Tomcat中不常见的操作"><a href="#Tomcat中不常见的操作" class="headerlink" title="Tomcat中不常见的操作"></a>Tomcat中不常见的操作</h3><h4 id="1-配置虚拟目录"><a href="#1-配置虚拟目录" class="headerlink" title="1.  配置虚拟目录"></a>1.  配置虚拟目录</h4><p>配置虚拟目录的产生是因为如果存在多个Web站点，并且在服务器资源有限的情况之下，依照默认的做法需要将所有的Web站点存放于WebApps目录之下，这样会导致服务器资源更加紧张。不利于单个Web站点的管理。</p><p>针对上述场景的产生，需要将Web站点进行分散，并需要将分散所创建的路径（目录）交给Web服务器管理（Tomcat） <strong>: 虚拟目录的映射</strong></p><h4 id="2-配置虚拟主机"><a href="#2-配置虚拟主机" class="headerlink" title="2.  配置虚拟主机"></a>2.  配置虚拟主机</h4><p>配置虚拟主机是解决多个网站多个域名公用一台服务器的场景，一般来讲一个Tomcat只运行一个网站。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> TomCat </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> WEB应用服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
