@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：JAVA基础面试题 - gker&#39;s blog</title>
+  <title>数据结构与算法-复杂度分析 - gker&#39;s blog</title>
+  
+    <meta name="keywords" content="数据结构与算法">
   
 
   
@@ -357,7 +357,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="http://gker.gitee.io/tc/blogBackground/bj2.jpg"></div>
           
@@ -388,299 +388,295 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
+
+
+  
+  <div class="article-meta" id="top">
     
-      
-  <section class="post-list">
     
-      
+    
+      <h1 class="title">
+        数据结构与算法-复杂度分析
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="https://gker.gitee.io/hexoblog" rel="nofollow">
+    <img no-lazy src="">
+    <p>gker</p>
+  </a>
+</div>
+
           
         
           
-        
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/gkerblog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a>
+    </a>
+  </div>
+
+
           
         
           
-        
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年6月8日</p>
+  </a>
+</div>
+
           
         
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%98%AF%E5%9F%BA%E4%BA%8E%E4%BB%80%E4%B9%88%E5%8E%9F%E7%90%86%EF%BC%9F/">
-        动态代理是基于什么原理？
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        动态代理是基于什么原理？
-从编程语言分类角度来讲，按照语言类型信息是在运行时检查，还是编译期检查分为动态类型和静态类型的编程语言 不同类型变量赋值时，是否需要显示地（强制）进行类型转换可区分是否是所谓的强类型或弱类型语言。Java语言是静态的强类型语言，但因为反射的存在，也具备部分动态语言的能力。
-
-Java中的反射机制
-反射机制是Java语言提供的一种基础功能，赋予程序在运行时的自省能力，...
-      
-    
+      <div id="lc-pv" data-title="数据结构与算法-复杂度分析" data-path="/gkerblog/2022/06/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="笼统解释下什么是数据结构与算法"><a href="#笼统解释下什么是数据结构与算法" class="headerlink" title="笼统解释下什么是数据结构与算法"></a>笼统解释下什么是数据结构与算法</h2><blockquote>
+<p>数据结构：一组数据存储的结构 <br><br>算法： 操作数据的一组方法<br>数据结构与算法无法分而治之的原因在于，数据结构为算法服务，算法需要作用于特定的数据结构上</p>
+</blockquote>
+<hr>
+<h2 id="复杂度分析（衡量算法与代码执行效率的考量指标）"><a href="#复杂度分析（衡量算法与代码执行效率的考量指标）" class="headerlink" title="复杂度分析（衡量算法与代码执行效率的考量指标）"></a>复杂度分析（衡量算法与代码执行效率的考量指标）</h2><blockquote>
+<ol>
+<li>时间、控件复杂度分析方法（不依赖运行环境与测试数据，区别与事后统计法）</li>
+</ol>
+</blockquote>
+<h3 id="大O时间复杂度表示法-T-n-O-f-n"><a href="#大O时间复杂度表示法-T-n-O-f-n" class="headerlink" title="大O时间复杂度表示法  T(n) = O (f(n))"></a>大O时间复杂度表示法  T(n) = O (f(n))</h3><blockquote>
+<p>推导过程 : 设代码执行时间为 T(n) 每行代码执行时间为 unit_time 为理想值</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int cal(int n) &#123;</span><br><span class="line">  int sum = 0;</span><br><span class="line">  int i = 1;</span><br><span class="line">  for (; i &lt;= n; ++i) &#123;</span><br><span class="line">    sum = sum + i;</span><br><span class="line">  &#125;</span><br><span class="line">  return sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">int cal(int n) &#123;</span><br><span class="line">  int sum = 0;</span><br><span class="line">  int i = 1;</span><br><span class="line">  int j = 1;</span><br><span class="line">  for (; i &lt;= n; ++i) &#123;</span><br><span class="line">    j = 1;</span><br><span class="line">    for (; j &lt;= n; ++j) &#123;</span><br><span class="line">      sum = sum +  i * j;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>[第一段] 代码执行时间推导 第一、第二行执行时间为一个unit_time for循环中执行时间 第三、第四行都为n个unit_time 即为 2n*unit_time 总时长为   T(n) = (2+2n)*unit_time <br></li>
+<li>[第二段] 代码执行时间推导 第一、第二、第三行执行时间为一个unit_time for循环中执行时间 第四、第五行都为n个unit_time 即为 2n* unit_time 第六、七执行时间为 n²* unit_time 总时长为   T(n) = (3+2n+2 ${n^2}$)*unit_time <br></li>
+<li>结论 ： 代码执行时间T(n)与每行代码执行次数f(n)成正比即 T(n) = O (f(n))</li>
+<li>公式解析 T(n)代码执行总时长 n 为数据规模 f(n)每行代码执行次数和 O表示执行时间T(n)与f(n)成正比</li>
+<li>上述例子代入公式 T(n) = O (2+2n) T(n) = O (3+2n+2 ${n^2}$) </li>
+<li>公式精简过程 ：当 n无限大时 低阶、常数、系数 不左右增加趋势，只需记录最大数量级，时间复杂度为 T(n)= O(n) ; T(n) = O(${n^2}$)</li>
+</ul>
+</blockquote>
+<h3 id="复杂度分析法则"><a href="#复杂度分析法则" class="headerlink" title="复杂度分析法则"></a>复杂度分析法则</h3><blockquote>
+<ol>
+<li>上述大O复杂度分析公式精简后，当n无限大时，时间复杂度分析方法中，只决定于数量级最大的部分，可忽略公式中的常数、系数、与低阶部分，只关注循环次数最多的一段代码。</li>
+<li>加法法则 ： 总时间复杂度等于量级最大的代码时间复杂度</li>
+</ol>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">int cal(int n) &#123;</span><br><span class="line">   int sum_1 = 0;</span><br><span class="line">   int p = 1;</span><br><span class="line">   for (; p &lt; 100; ++p) &#123;</span><br><span class="line">     sum_1 = sum_1 + p;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   int sum_2 = 0;</span><br><span class="line">   int q = 1;</span><br><span class="line">   for (; q &lt; n; ++q) &#123;</span><br><span class="line">     sum_2 = sum_2 + q;</span><br><span class="line">   &#125;</span><br><span class="line"> </span><br><span class="line">   int sum_3 = 0;</span><br><span class="line">   int i = 1;</span><br><span class="line">   int j = 1;</span><br><span class="line">   for (; i &lt;= n; ++i) &#123;</span><br><span class="line">     j = 1; </span><br><span class="line">     for (; j &lt;= n; ++j) &#123;</span><br><span class="line">       sum_3 = sum_3 +  i * j;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> </span><br><span class="line">   return sum_1 + sum_2 + sum_3;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>上述代码时间复杂度分为三段且忽略常数 第一段 忽略确定常数时间复杂度<br><br>第二段 O(n) 第三段忽略系数与低阶 O(${n^2}$) <br><br>加法法则得出这段代码时间复杂度为 T(n) = O(${n^2}$) <br><br>T1(n) = O(f(n)) T2(n) = O(g(n)) T(n) = T1(n)+T2(n) = Max(O(f(n)),O(g(n))) <br></li>
+</ul>
+<ol start="3">
+<li>乘法法则 ： 嵌套代码的复杂度等于嵌套内外代码复杂度的乘积</li>
+</ol>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">int cal(int n) &#123;</span><br><span class="line">   int ret = 0; </span><br><span class="line">   int i = 1;</span><br><span class="line">   for (; i &lt; n; ++i) &#123;</span><br><span class="line">     ret = ret + f(i);</span><br><span class="line">   &#125; </span><br><span class="line"> &#125; </span><br><span class="line"> </span><br><span class="line"> int f(int n) &#123;</span><br><span class="line">  int sum = 0;</span><br><span class="line">  int i = 1;</span><br><span class="line">  for (; i &lt; n; ++i) &#123;</span><br><span class="line">    sum = sum + i;</span><br><span class="line">  &#125; </span><br><span class="line">  return sum;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="复杂度分析乘法法则推导-T-n-O-cal-n-O-f-n-O-n-2"><a href="#复杂度分析乘法法则推导-T-n-O-cal-n-O-f-n-O-n-2" class="headerlink" title="复杂度分析乘法法则推导  T(n)= O(cal(n))* O(f(n)) = O(${n^2}$)"></a>复杂度分析乘法法则推导  T(n)= O(cal(n))* O(f(n)) = O(${n^2}$)</h2><hr>
+<h3 id="复杂度量级"><a href="#复杂度量级" class="headerlink" title="复杂度量级"></a>复杂度量级</h3><blockquote>
+<ol>
+<li>常量阶 O(1)<blockquote>
+<ul>
+<li>O(1)可表示下方代码时间复杂度</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int i = 8;</span><br><span class="line">int j = 6;</span><br><span class="line">int sum = i + j;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ol start="2">
+<li>对数阶 O($\log{n}$)</li>
+<li>线性对数阶 O(n $\log{n}$)<blockquote>
+<ul>
+<li>下方代码执行次数最多的是第三行，执行次数由n决定 i的值为等比数列值 <br></li>
+<li>${2^1}$ ${2^2}$ ${2^3}$ ${2^4}$ ${2^x}$ = n 即 x = $\log{2^n}$ 与 $\log{3^n}$</li>
+<li>对数阶时间复杂度可忽略底数标记为O($\log{n}$)推导如下<blockquote>
+<ul>
+<li>$\because$ $\log{3^n}$ = $\because$ $\log{3^2}$ * $\log{2^n}$ <br><br>又 $\because$  大O表示法忽略常数 <br><br>$\therefore$ T(n) = O(C*$\log{2^n}$) O(Cf(n))=O(f(n)) <br><br>$\therefore$ T(n) = O($\log{n}$)</li>
+</ul>
+</blockquote>
+</li>
+<li>线性对数阶在对数阶基础上循环执行n遍    </li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//1</span><br><span class="line"> i=1;</span><br><span class="line"> while (i &lt;= n)  &#123;</span><br><span class="line">   i = i * 2;</span><br><span class="line"> &#125;</span><br><span class="line">//2 </span><br><span class="line"> i=1;</span><br><span class="line"> while (i &lt;= n)  &#123;</span><br><span class="line">   i = i * 3;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ol start="3">
+<li>线性阶 O(n)</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="5">
+<li>平方阶 O(${n^2}$) 、立方阶 O(${n^3}$) 、k次方阶 O(${n^k}$)</li>
+<li>指数阶 O(${2^n}$) [非多项式量级]</li>
+<li>阶乘阶段 O(n!) [非多项式量级]</li>
+</ol>
+</blockquote>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E6%98%AF%E5%9F%BA%E4%BA%8E%E4%BB%80%E4%B9%88%E5%8E%9F%E7%90%86%EF%BC%9F/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-06-08T16:53:31+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年6月8日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/String%E3%80%81StringBuilder%E3%80%81StringBuffer%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/">
-        String、StringBuilder、StringBuffer有什么区别
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        String、StringBuilder、StringBuffer有什么区别
-Java每日一记1 内容更改 Java8中新增的StringJoiner工具类
+  <div class="new-meta-item meta-tags"><a class="tag" href="/gkerblog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>数据结构与算法</p></a></div>
 
-12StringJoiner stringjoiner = new StringJoiner(&quot;分割符&quot;);StringJoiner stringjoiner = new StringJoiner(&quot;分割...
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gker.gitee.io/gkerblog/2022/06/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/&title=数据结构与算法-复杂度分析 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gker.gitee.io/gkerblog/2022/06/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/&title=数据结构与算法-复杂度分析 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gker.gitee.io/gkerblog/2022/06/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/&title=数据结构与算法-复杂度分析 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/String%E3%80%81StringBuilder%E3%80%81StringBuffer%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/%E5%BC%BA%E5%BC%95%E7%94%A8%E3%80%81%E8%BD%AF%E5%BC%95%E7%94%A8%E3%80%81%E5%BC%B1%E5%BC%95%E7%94%A8%E3%80%81%E5%B9%BB%E8%B1%A1%E5%BC%95%E7%94%A8%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/">
-        强引用、软引用、弱引用、幻象引用有什么区别?
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        强引用、软引用、弱引用、幻象引用有什么区别
-Java中将除基本数据类型意外的各类对象的对象引用，按其生命周期的长短，将其分为四类
-
-各种引用
-不同引用类型体现的是对象不同的可达性和对垃圾收集的影响 
-
-强引用 （Strong reference）
-
-即普通的对象引用，存在强引用指向的对象，垃圾收集器不会碰这种对象
-通过new 关键字创建的对象所关联的引用就是强引用，当JVM内存空间不足时，J...
-      
-    
+    </div>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/%E5%BC%BA%E5%BC%95%E7%94%A8%E3%80%81%E8%BD%AF%E5%BC%95%E7%94%A8%E3%80%81%E5%BC%B1%E5%BC%95%E7%94%A8%E3%80%81%E5%B9%BB%E8%B1%A1%E5%BC%95%E7%94%A8%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/final-finally-finalize-%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/">
-        final finally finalize 有何不同?
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        final finally finalize 有何不同
-final
-
-final修饰符可修饰类、方法、变量
-类无法被继承、方法不可被重写、变量不可被修改
-final关键字经常大量出现在源码或第三方类库中，可有效避免API使用者更改基础功能，在并发编程中有利于减少额外的同步开销。
-final只可约束相关变量引用不可以被赋值，但final修饰的对象行为不会被final影响
 
 
-finally
-
-...
-      
-    
-  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/final-finally-finalize-%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/'>
-            阅读全文
-          </a>
-        </div>
+      
+        <a class='next' href='/gkerblog/2022/06/07/Hexo%E7%AE%80%E5%8D%95%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+          <p class='title'>Hexo简单搭建过程以及使用命令<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>环境安装
+
+Node.js 安装完成后使用cmd执行 node -v 检查是否安装成功
+下载cnpm 淘宝镜像源 npm install -g cnpm –registry=https://re...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/java-%E4%B8%AD%E7%9A%84-Exception-%E4%B8%8E-Error/">
-        java 中的 Exception 与 Error
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Exception Error区别
-Java中的Throwable Exception Error设计与分类
-典型回答：Exception 与 Error都继承了Throwable类，在Java中只有Throwable类型的实例才可以被抛出（throw）或者捕获（catch）Exception是程序正常运行中可预料的意外情况，可能并应当进行捕获。
-
-checked （可检查异常）：编译期的一...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/java-%E4%B8%AD%E7%9A%84-Exception-%E4%B8%8E-Error/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -688,161 +684,28 @@ checked （可检查异常）：编译期的一...
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/gkerblog/about/'>
-          <img no-lazy src='http://gker.gitee.io/tc/blogBackground/me.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">gker's blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/gkerblog/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/gkerblog/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/"
-            id="gkerblogcategoriesGit-E59FBAE7A180"
-            ><div class='name'>Git 基础</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Hexo%E5%8D%9A%E5%AE%A2/" href="/gkerblog/categories/Hexo%E5%8D%9A%E5%AE%A2/"
-            id="gkerblogcategoriesHexoE58D9AE5AEA2"
-            ><div class='name'>Hexo博客</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/"
-            id="gkerblogcategoriesJAVAE59FBAE7A180"
-            ><div class='name'>JAVA基础</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/"
-            id="gkerblogcategoriesJAVAE59FBAE7A180E99DA2E8AF95E9A298"
-            ><div class='name'>JAVA基础面试题</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JVM/" href="/gkerblog/categories/JVM/"
-            id="gkerblogcategoriesJVM"
-            ><div class='name'>JVM</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Spring/" href="/gkerblog/categories/Spring/"
-            id="gkerblogcategoriesSpring"
-            ><div class='name'>Spring</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/TomCat/" href="/gkerblog/categories/TomCat/"
-            id="gkerblogcategoriesTomCat"
-            ><div class='name'>TomCat</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" href="/gkerblog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"
-            id="gkerblogcategoriesE695B0E68DAEE7BB93E69E84E4B88EE7AE97E6B395"
-            ><div class='name'>数据结构与算法</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%BC%E7%BB%9F%E8%A7%A3%E9%87%8A%E4%B8%8B%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95"><span class="toc-text">笼统解释下什么是数据结构与算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%EF%BC%88%E8%A1%A1%E9%87%8F%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%95%88%E7%8E%87%E7%9A%84%E8%80%83%E9%87%8F%E6%8C%87%E6%A0%87%EF%BC%89"><span class="toc-text">复杂度分析（衡量算法与代码执行效率的考量指标）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7O%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%A1%A8%E7%A4%BA%E6%B3%95-T-n-O-f-n"><span class="toc-text">大O时间复杂度表示法  T(n) &#x3D; O (f(n))</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E6%B3%95%E5%88%99"><span class="toc-text">复杂度分析法则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E4%B9%98%E6%B3%95%E6%B3%95%E5%88%99%E6%8E%A8%E5%AF%BC-T-n-O-cal-n-O-f-n-O-n-2"><span class="toc-text">复杂度分析乘法法则推导  T(n)&#x3D; O(cal(n))* O(f(n)) &#x3D; O(${n^2}$)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E9%87%8F%E7%BA%A7"><span class="toc-text">复杂度量级</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/gkerblog/tags/Git-%E5%9F%BA%E7%A1%80/" style="font-size: 17.33px; color: #828282">Git 基础</a> <a href="/gkerblog/tags/Hexo%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">Hexo博客</a> <a href="/gkerblog/tags/JAVA%E5%9F%BA%E7%A1%80/" style="font-size: 20.67px; color: #6c6c6c">JAVA基础</a> <a href="/gkerblog/tags/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 24px; color: #555">JAVA基础面试题</a> <a href="/gkerblog/tags/JVM/" style="font-size: 17.33px; color: #828282">JVM</a> <a href="/gkerblog/tags/WEB%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 14px; color: #999">WEB应用服务器</a> <a href="/gkerblog/tags/freemark/" style="font-size: 14px; color: #999">freemark</a> <a href="/gkerblog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 14px; color: #999">数据结构与算法</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
 		  
@@ -851,8 +714,8 @@ checked （可检查异常）：编译期的一...
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="数据结构与算法-复杂度分析";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
