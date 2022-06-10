@@ -468,7 +468,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>时间、控件复杂度分析方法（不依赖运行环境与测试数据，区别与事后统计法）</li>
 </ol>
 </blockquote>
-<h3 id="大O时间复杂度表示法-T-n-O-f-n"><a href="#大O时间复杂度表示法-T-n-O-f-n" class="headerlink" title="大O时间复杂度表示法  T(n) = O (f(n))"></a>大O时间复杂度表示法  T(n) = O (f(n))</h3><blockquote>
+<hr>
+<h2 id="大O时间复杂度表示法-T-n-O-f-n"><a href="#大O时间复杂度表示法-T-n-O-f-n" class="headerlink" title="大O时间复杂度表示法  T(n) = O (f(n))"></a>大O时间复杂度表示法  T(n) = O (f(n))</h2><blockquote>
 <p>推导过程 : 设代码执行时间为 T(n) 每行代码执行时间为 unit_time 为理想值</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">int cal(int n) &#123;</span><br><span class="line">  int sum = 0;</span><br><span class="line">  int i = 1;</span><br><span class="line">  for (; i &lt;= n; ++i) &#123;</span><br><span class="line">    sum = sum + i;</span><br><span class="line">  &#125;</span><br><span class="line">  return sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -483,7 +484,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>公式精简过程 ：当 n无限大时 低阶、常数、系数 不左右增加趋势，只需记录最大数量级，时间复杂度为 T(n)= O(n) ; T(n) = O(${n^2}$)</li>
 </ul>
 </blockquote>
-<h3 id="复杂度分析法则"><a href="#复杂度分析法则" class="headerlink" title="复杂度分析法则"></a>复杂度分析法则</h3><blockquote>
+<hr>
+<h2 id="复杂度分析过程"><a href="#复杂度分析过程" class="headerlink" title="复杂度分析过程"></a>复杂度分析过程</h2><blockquote>
 <ol>
 <li>上述大O复杂度分析公式精简后，当n无限大时，时间复杂度分析方法中，只决定于数量级最大的部分，可忽略公式中的常数、系数、与低阶部分，只关注循环次数最多的一段代码。</li>
 <li>加法法则 ： 总时间复杂度等于量级最大的代码时间复杂度</li>
@@ -499,6 +501,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ol>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">int cal(int n) &#123;</span><br><span class="line">   int ret = 0; </span><br><span class="line">   int i = 1;</span><br><span class="line">   for (; i &lt; n; ++i) &#123;</span><br><span class="line">     ret = ret + f(i);</span><br><span class="line">   &#125; </span><br><span class="line"> &#125; </span><br><span class="line"> </span><br><span class="line"> int f(int n) &#123;</span><br><span class="line">  int sum = 0;</span><br><span class="line">  int i = 1;</span><br><span class="line">  for (; i &lt; n; ++i) &#123;</span><br><span class="line">    sum = sum + i;</span><br><span class="line">  &#125; </span><br><span class="line">  return sum;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>复杂度分析乘法法则推导  T(n)= O(cal(n))* O(f(n)) = O(${n^2}$) <br><br>4. 当存在多个数据规模时，无法通过单一的加法与乘法法则进行相关复杂度判断<br>O(m+n) 、O(m*n)</p>
+</blockquote>
+<hr>
 <h2 id="复杂度分析乘法法则推导-T-n-O-cal-n-O-f-n-O-n-2"><a href="#复杂度分析乘法法则推导-T-n-O-cal-n-O-f-n-O-n-2" class="headerlink" title="复杂度分析乘法法则推导  T(n)= O(cal(n))* O(f(n)) = O(${n^2}$)"></a>复杂度分析乘法法则推导  T(n)= O(cal(n))* O(f(n)) = O(${n^2}$)</h2><hr>
 <h3 id="复杂度量级"><a href="#复杂度量级" class="headerlink" title="复杂度量级"></a>复杂度量级</h3><blockquote>
 <ol>
@@ -534,14 +540,60 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <blockquote>
 <ol start="3">
 <li>线性阶 O(n)</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="5">
 <li>平方阶 O(${n^2}$) 、立方阶 O(${n^3}$) 、k次方阶 O(${n^k}$)</li>
 <li>指数阶 O(${2^n}$) [非多项式量级]</li>
 <li>阶乘阶段 O(n!) [非多项式量级]</li>
 </ol>
+</blockquote>
+<h3 id="由低阶到高阶复杂度排序"><a href="#由低阶到高阶复杂度排序" class="headerlink" title="由低阶到高阶复杂度排序"></a>由低阶到高阶复杂度排序</h3><div style="text-align:center">
+    <img src="https://static001.geekbang.org/resource/image/49/04/497a3f120b7debee07dc0d03984faf04.jpg" class="lazyload" data-srcset="https://static001.geekbang.org/resource/image/49/04/497a3f120b7debee07dc0d03984faf04.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" style="width:500px;">
+</div>
+
+<hr>
+<h2 id="时间复杂度与空间复杂度概述"><a href="#时间复杂度与空间复杂度概述" class="headerlink" title="时间复杂度与空间复杂度概述"></a>时间复杂度与空间复杂度概述</h2><h3 id="时间复杂度（渐进时间复杂度"><a href="#时间复杂度（渐进时间复杂度" class="headerlink" title="时间复杂度（渐进时间复杂度)"></a>时间复杂度（渐进时间复杂度)</h3><blockquote>
+<ul>
+<li>表示算法的执行时间与数据规模之间的增长关系</li>
+</ul>
+</blockquote>
+<h3 id="空间复杂度（渐进空间复杂度"><a href="#空间复杂度（渐进空间复杂度" class="headerlink" title="空间复杂度（渐进空间复杂度)"></a>空间复杂度（渐进空间复杂度)</h3><blockquote>
+<ul>
+<li>表示算法的存储空间与数据规模之间的增长关系</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="空间复杂度"><a href="#空间复杂度" class="headerlink" title="空间复杂度"></a>空间复杂度</h2><blockquote>
+<ul>
+<li>空间复杂度与代码中分配空间的代码有关，常见的空间复杂度量级为O(1)、O(n)、O(${n^2}$)</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="最好、最坏、平均、均摊-复杂度"><a href="#最好、最坏、平均、均摊-复杂度" class="headerlink" title="最好、最坏、平均、均摊 复杂度"></a>最好、最坏、平均、均摊 复杂度</h2><blockquote>
+<ul>
+<li>例程: 下方代码时间复杂度为O(n)</li>
+</ul>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// n表示数组array的长度</span><br><span class="line">int find(int[] array, int n, int x) &#123;</span><br><span class="line">  int i = 0;</span><br><span class="line">  int pos = -1;</span><br><span class="line">  for (; i &lt; n; ++i) &#123;</span><br><span class="line">    if (array[i] == x) pos = i;</span><br><span class="line">  &#125;</span><br><span class="line">  return pos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>例程: 下方代码因存在多种情况，时间复杂度无法按照现有的知识进行复杂度分析</li>
+</ul>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// n表示数组array的长度</span><br><span class="line">int find(int[] array, int n, int x) &#123;</span><br><span class="line">  int i = 0;</span><br><span class="line">  int pos = -1;</span><br><span class="line">  for (; i &lt; n; ++i) &#123;</span><br><span class="line">    if (array[i] == x) &#123;</span><br><span class="line">       pos = i;</span><br><span class="line">       break;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return pos;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>针对上述例程中存在的无法按照原有复杂度分析法进行分析会引入三种复杂度表示法<blockquote>
+<ol>
+<li>最好情况时间复杂度 ：最理想情况下执行这段代码复杂度 O(1)</li>
+<li>最坏情况时间复杂度 ：最糟糕的情况下执行这段代码 O(n)</li>
+<li>平均情况时间复杂度 ：加权平均时间复杂度/期望时间复杂度<blockquote>
+<p>∵ 1+2+3+4+…..n 由等差数列公式得 $\frac{n²+n}{2}$<br><br>又∵ $\frac{n²+n}{2}$  + n = $\frac{n²+3n}{2}$  <br><br>∴$\frac{n²+3n}{2}$ / n+1 = $\frac{n²+3n}{2(n+1)}$ <br><br>∴大O表示法省略系数、低阶、常数 得 O(n)</p>
+</blockquote>
+</li>
+<li>均摊时间复杂度 分析方法：摊还分析/平摊分析</li>
+</ol>
+</blockquote>
+</li>
+</ul>
 </blockquote>
 
   
@@ -568,10 +620,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-06-08T16:53:31+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-06-09T16:38:28+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月8日</p>
+    <p>更新于：2022年6月9日</p>
   </a>
 </div>
 
@@ -647,6 +699,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
+        <a class='prev' href='/gkerblog/2022/06/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E6%95%B0%E7%BB%84/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>数据结构与算法-数组</p>
+          <p class='content'>何为数组？
+
+数组Array是一种 线性表数据结构，它用一组连续的内存空间，来存储一组具有相同类型的数据
+
+线性表(Linear List)：数据排成一条线一样的结构，每个线性表上的数据最多有前...</p>
+        </a>
+      
       
         <a class='next' href='/gkerblog/2022/06/07/Hexo%E7%AE%80%E5%8D%95%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4/'>
           <p class='title'>Hexo简单搭建过程以及使用命令<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
@@ -696,7 +757,7 @@ Node.js 安装完成后使用cmd执行 node -v 检查是否安装成功
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%BC%E7%BB%9F%E8%A7%A3%E9%87%8A%E4%B8%8B%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95"><span class="toc-text">笼统解释下什么是数据结构与算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%EF%BC%88%E8%A1%A1%E9%87%8F%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%95%88%E7%8E%87%E7%9A%84%E8%80%83%E9%87%8F%E6%8C%87%E6%A0%87%EF%BC%89"><span class="toc-text">复杂度分析（衡量算法与代码执行效率的考量指标）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7O%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%A1%A8%E7%A4%BA%E6%B3%95-T-n-O-f-n"><span class="toc-text">大O时间复杂度表示法  T(n) &#x3D; O (f(n))</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E6%B3%95%E5%88%99"><span class="toc-text">复杂度分析法则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E4%B9%98%E6%B3%95%E6%B3%95%E5%88%99%E6%8E%A8%E5%AF%BC-T-n-O-cal-n-O-f-n-O-n-2"><span class="toc-text">复杂度分析乘法法则推导  T(n)&#x3D; O(cal(n))* O(f(n)) &#x3D; O(${n^2}$)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E9%87%8F%E7%BA%A7"><span class="toc-text">复杂度量级</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%BC%E7%BB%9F%E8%A7%A3%E9%87%8A%E4%B8%8B%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95"><span class="toc-text">笼统解释下什么是数据结构与算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%EF%BC%88%E8%A1%A1%E9%87%8F%E7%AE%97%E6%B3%95%E4%B8%8E%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%95%88%E7%8E%87%E7%9A%84%E8%80%83%E9%87%8F%E6%8C%87%E6%A0%87%EF%BC%89"><span class="toc-text">复杂度分析（衡量算法与代码执行效率的考量指标）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7O%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E8%A1%A8%E7%A4%BA%E6%B3%95-T-n-O-f-n"><span class="toc-text">大O时间复杂度表示法  T(n) &#x3D; O (f(n))</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E8%BF%87%E7%A8%8B"><span class="toc-text">复杂度分析过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90%E4%B9%98%E6%B3%95%E6%B3%95%E5%88%99%E6%8E%A8%E5%AF%BC-T-n-O-cal-n-O-f-n-O-n-2"><span class="toc-text">复杂度分析乘法法则推导  T(n)&#x3D; O(cal(n))* O(f(n)) &#x3D; O(${n^2}$)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E9%87%8F%E7%BA%A7"><span class="toc-text">复杂度量级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%B1%E4%BD%8E%E9%98%B6%E5%88%B0%E9%AB%98%E9%98%B6%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%8E%92%E5%BA%8F"><span class="toc-text">由低阶到高阶复杂度排序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E4%B8%8E%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E6%A6%82%E8%BF%B0"><span class="toc-text">时间复杂度与空间复杂度概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%88%E6%B8%90%E8%BF%9B%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-text">时间复杂度（渐进时间复杂度)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%EF%BC%88%E6%B8%90%E8%BF%9B%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-text">空间复杂度（渐进空间复杂度)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-text">空间复杂度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%A5%BD%E3%80%81%E6%9C%80%E5%9D%8F%E3%80%81%E5%B9%B3%E5%9D%87%E3%80%81%E5%9D%87%E6%91%8A-%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-text">最好、最坏、平均、均摊 复杂度</span></a></li></ol>
     </div>
   </section>
 
