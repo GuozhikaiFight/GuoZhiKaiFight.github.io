@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2022 - gker&#39;s blog</title>
+  <title>数据结构与算法-链表 - gker&#39;s blog</title>
+  
+    <meta name="keywords" content="数据结构与算法">
   
 
   
@@ -106,7 +106,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -357,7 +357,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="http://gker.gitee.io/tc/blogBackground/bj2.jpg"></div>
           
@@ -389,390 +389,354 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
     
-      
+    
+      <h1 class="title">
+        数据结构与算法-链表
+      </h1>
+      <div class='new-meta-box'>
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/19/JVM-03-java%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BDclass%E7%B1%BB/">
-        JVM-03-java虚拟机如何加载class类
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java中的基本数据类型
-为什么在谈论Java虚拟机时如何加载class类时会优先谈关于Java的数据类型的话题？
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="https://gker.gitee.io/hexoblog" rel="nofollow">
+    <img no-lazy src="">
+    <p>gker</p>
+  </a>
+</div>
 
-在java中除去基本数据类型还存在引用数据类型，但基本数据类型已经由Java虚拟机预先定义完成，刨除基本数据类型后，存在的引用数据类型分为以下四类
-
-
-类
-接口
-数组
-泛型参数真正经由jvm进行加载的引用类型只有类、与接口两类，并且都有对应的字节流。而jvm类加载过程，实际上...
-      
-    
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/gkerblog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2022-05-19</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年6月11日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JVM/">JVM</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="数据结构与算法-链表" data-path="/gkerblog/2022/06/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E9%93%BE%E8%A1%A8/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="LRU缓存淘汰算法"><a href="#LRU缓存淘汰算法" class="headerlink" title="LRU缓存淘汰算法"></a>LRU缓存淘汰算法</h2><blockquote>
+<ul>
+<li>各种缓存<blockquote>
+<ol>
+<li>CPU缓存</li>
+<li>数据库缓存</li>
+<li>浏览器缓存</li>
+</ol>
+</blockquote>
+</li>
+<li>缓存淘汰策略 (缓存总有满的时候，满了咋清理)<blockquote>
+<ul>
+<li>先进先出策略FIFO(first in ,first out)</li>
+<li>最少使用策略LFU(Least Frequently Used)</li>
+<li>最近最少使用策略LRU(Least Recently Used)</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="数组与链表区别"><a href="#数组与链表区别" class="headerlink" title="数组与链表区别"></a>数组与链表区别</h2><blockquote>
+<ol>
+<li>底层存储结构<blockquote>
+<ul>
+<li>数组对于内存的要求比较高，当内存总没有连续的，足够大的存储空间时，即便内存的剩余总量大于申请的空间，也会申请失败。</li>
+<li>链表相反，不需要连续的内存空间来存储数据，通过“指针”，将零散的内存串联起来使用。</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="链表的常见数据结构"><a href="#链表的常见数据结构" class="headerlink" title="链表的常见数据结构"></a>链表的常见数据结构</h2><blockquote>
+<ol>
+<li>单链表<blockquote>
+<ul>
+<li>链表通过指针将一组零散的内存块串联在一起，其中，我们把内存块成为链表的结点，将各个单独的内存块串联起来，内存块中除了存储数据，还需要记录链上的下一个结点地址，下个结点地址的指针叫作后继指针next</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+<div style="text-align:center" >
+    <image src="https://static001.geekbang.org/resource/image/b9/eb/b93e7ade9bb927baad1348d9a806ddeb.jpg" style="width:600px;">
+</div>
+
+<blockquote>
+<ul>
+<li>链表结构中最开始的结点叫作头结点，最后一个结点叫作尾结点，头结点记录链表的基地址，尾结点指针指向空地址null</li>
+<li>链表中插入与删除数据，不需要为了内存的连续性而搬移结点，只需要考虑相邻结点的指针改变，所以对应的时间复杂度为O(1)</li>
+<li>链表中随机访问元素时，无法做到数组那样，需要根据指针一个结点一个结点依次遍历，时间复杂度为O(n)</li>
+</ul>
+<ol start="2">
+<li>循环链表</li>
+</ol>
+</blockquote>
+<div style="text-align:center" >
+    <image src="https://static001.geekbang.org/resource/image/86/55/86cb7dc331ea958b0a108b911f38d155.jpg" style="width:600px;">
+</div>
+
+<blockquote>
+<blockquote>
+<ul>
+<li>循环链表是特殊的单链表，特殊性在于尾结点指向的地址为头结点，首尾结点相连。</li>
+</ul>
+<ol start="3">
+<li>双向链表</li>
+</ol>
+</blockquote>
+</blockquote>
+<div style="text-align:center" >
+    <image src="https://static001.geekbang.org/resource/image/cb/0b/cbc8ab20276e2f9312030c313a9ef70b.jpg" style="width:600px;">
+</div>
+
+<blockquote>
+<blockquote>
+<ul>
+<li>双向链表支持前后两个方向，每个结点不止有一个后继指针next指向后面的结点，还有一个前驱指针prev指向前面的结点。</li>
+<li>双向链表因需要提供两个额外的空间存储后继节点与前驱结点地址，多以比单向链表更占用空间，可支持双向遍历。</li>
+</ul>
+<ol start="4">
+<li>双向循环链表</li>
+</ol>
+</blockquote>
+</blockquote>
+<div style="text-align:center" >
+    <image src="https://static001.geekbang.org/resource/image/d1/91/d1665043b283ecdf79b157cfc9e5ed91.jpg" style="width:600px;">
+</div>
+
+<hr>
+<h2 id="链表中的删除与插入操作再分析"><a href="#链表中的删除与插入操作再分析" class="headerlink" title="链表中的删除与插入操作再分析"></a>链表中的删除与插入操作再分析</h2><blockquote>
+<ul>
+<li>之前所分析的链表中删除、插入操作只需更改相邻结点数据，时间复杂度为O(1)</li>
+<li>实际从链表中删除一个数据有两种情况<blockquote>
+<ol>
+<li>删除结点中“值等于某个给定值”的结点  <blockquote>
+<ul>
+<li>给定值的情况下，单链表，双向链表，仅删除操作的时间复杂度为O(1),但查找到该值的时间复杂度为O(n)</li>
+</ul>
+</blockquote>
+</li>
+<li>删除给定指针指向的结点<blockquote>
+<ul>
+<li>对于单向链表来讲，删除给定结点需要找到该结点的前驱结点，时间复杂度为O(n),双向链表因其结点中保存有前驱结点，不需要像单向链表一样遍历，所以删除操作时间复杂度为O(1)</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</blockquote>
+</li>
+<li>插入操作，双向链表时间复杂度为O(1)，单向链表时间复杂度为O(n)</li>
+<li>双向链表应用：java中的LinkedHashMap容器</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="以空间换时间，以时间换空间"><a href="#以空间换时间，以时间换空间" class="headerlink" title="以空间换时间，以时间换空间"></a>以空间换时间，以时间换空间</h2><blockquote>
+<ul>
+<li>当内存空间充足，并且追求代码更加快的执行速度时，可采用空间复杂度相对高，但时间复杂度相对低的算法与数据结构，相反，空间不足时，需要对时间进行牺牲。</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="数组与链表数据结构性能比拼"><a href="#数组与链表数据结构性能比拼" class="headerlink" title="数组与链表数据结构性能比拼"></a>数组与链表数据结构性能比拼</h2><blockquote>
+<ol>
+<li>数组的缺点是固定大小，一经声明需要占用连续的内存空间，当声明的数组过大时，系统中没有足够的内存为其分配，则会导致内存不足(OOM)，链表本身无内存大小限制，天然地支持动态扩容。</li>
+<li>数组使用的是连续的内存空间，可借助CPU缓存机制预读数组中的数据，所以访问效率更高，加载某个下标的时候，可以把以后的几个下标元素也加载到CPU缓存，链表因其使用的不是连续的内存空间，无法有效预读。</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="LRU缓存淘汰算法基于链表实现"><a href="#LRU缓存淘汰算法基于链表实现" class="headerlink" title="LRU缓存淘汰算法基于链表实现"></a>LRU缓存淘汰算法基于链表实现</h2><blockquote>
+<ul>
+<li>维护一个有序单链表，越靠近尾部的结点是越早之前访问的，当新数据被访问时，从链表头部开始遍历。</li>
+<li>若此数据之前被缓存，需遍历得到这个数据对应的结点，并删除，再将数据插入到链表头部。</li>
+<li>若此数据之前不存在链表中，当缓存未满时，直接插入到头部，当缓存已满时，链表尾部结点删除，新数据插入头部。</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="如何判断一个字符串是否是回文字符串"><a href="#如何判断一个字符串是否是回文字符串" class="headerlink" title="如何判断一个字符串是否是回文字符串"></a>如何判断一个字符串是否是回文字符串</h2><blockquote>
+<ul>
+<li>回文字符串是正读、反读都一样的字符串。</li>
+<li></li>
+</ul>
+</blockquote>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/19/JVM-03-java%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BDclass%E7%B1%BB/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-06-11T10:44:16+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年6月11日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/15/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/">
-        Java中的注解与反射
-      </a>
-    </h2>
-  
-  <div class='md'>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/gkerblog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>数据结构与算法</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        注解 Annotation
-
-基本格式： @ 注释名
-使用位置： package class method filed上
-
-
-内置注解(Java本身自带的注解)
-
-@Override 重写 不做解释
-@Deprecated 不鼓励使用这样的元素
-@SuppressWarnings 镇压警告信息 可传参
-
-
-元注解 解释其他注解的注解
-
-@Target 描述注解使用范围
-@Retention ...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gker.gitee.io/gkerblog/2022/06/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E9%93%BE%E8%A1%A8/&title=数据结构与算法-链表 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gker.gitee.io/gkerblog/2022/06/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E9%93%BE%E8%A1%A8/&title=数据结构与算法-链表 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gker.gitee.io/gkerblog/2022/06/11/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E9%93%BE%E8%A1%A8/&title=数据结构与算法-链表 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/">JAVA基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/15/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/08/GIT%E7%9F%A5%E8%AF%86/">
-        GIT知识
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        .git目录文件
-
-HEAD文件
- 存放当前Git工作指向分支 ：ref: refs/heads/master 切换路径后会发生变化
-
-
-config文件 
-本地仓库配置信息，会设置在config文件中
-
-
-refs文件 
-
-1 heads 分支 heads分支文件中会存在多个文件，每个文件中存放的类似指针，会指向相应commit 
-2 tags 里程碑
-
-
-
-objects 存放对象 
-
-...
-      
-    
+    </div>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/">Git 基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/08/GIT%E7%9F%A5%E8%AF%86/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/30/GIT%E5%9F%BA%E7%A1%80/">
-        GIT基础命令
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Windows中的cmd命令
-
-cls 清屏
 
 
-GIT基础命令
-
- git config –global/local/system 设置命令除了作用域不一致其他都相同
-1 git –verison 查看GT版本
-2 git config –global –list 查看git用户信息
-3 git config –global user.name ‘your_name’
-4 git conf...
-      
-    
-  </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/">Git 基础</a>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/30/GIT%E5%9F%BA%E7%A1%80/'>
-            阅读全文
-          </a>
-        </div>
+      
+        <a class='next' href='/gkerblog/2022/06/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E6%95%B0%E7%BB%84/'>
+          <p class='title'>数据结构与算法-数组<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>何为数组？
+
+数组Array是一种 线性表数据结构，它用一组连续的内存空间，来存储一组具有相同类型的数据
+
+线性表(Linear List)：数据排成一条线一样的结构，每个线性表上的数据最多有前...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/27/JVM-01-java%E4%BB%A3%E7%A0%81%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/">
-        JVM-01-java代码是如何运行的
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        01 | JAVA中的JVM是如何识别运行高级语言所编写的代码的？
-
-三个问题
-
-
-
-我们对于JAVA所宣传的“一次编译，到处运行”是怎样理解的呢？
-
-
-
-JAVA作为一门高度抽象的语言，在经过成熟的IDE编写后，那些能被我们所看懂的代码，到底是如何在JVM中运行的呢？
-
-
-
-JAVA语言到底是编译执行还是解释执行？
+  </article>
 
 
 
 
 
-Write once, run anywhere
-我们在学习JV...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JVM/">JVM</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/27/JVM-01-java%E4%BB%A3%E7%A0%81%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/">
-        Java每日一记
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java8中新增的StringJoiner工具类
-2022年5月26日15:35:21 Java8中新增的StringJoiner工具类
-
-12StringJoiner stringjoiner = new StringJoiner(&quot;分割符&quot;);StringJoiner stringjoiner = new StringJoiner(&quot;分割符&quot;,&q...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-07</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/">JAVA基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/gkerblog/archives/2022/">
-            <section class="post prev white-box shadow" >
-              <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 2
-        </p>
-        
-      </div>
-    
-  
-
-
-	
 </div>
 <aside class='l_side'>
   
@@ -780,161 +744,28 @@ Write once, run anywhere
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/gkerblog/about/'>
-          <img no-lazy src='http://gker.gitee.io/tc/blogBackground/me.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">gker's blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/gkerblog/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/gkerblog/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/"
-            id="gkerblogcategoriesGit-E59FBAE7A180"
-            ><div class='name'>Git 基础</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Hexo%E5%8D%9A%E5%AE%A2/" href="/gkerblog/categories/Hexo%E5%8D%9A%E5%AE%A2/"
-            id="gkerblogcategoriesHexoE58D9AE5AEA2"
-            ><div class='name'>Hexo博客</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/"
-            id="gkerblogcategoriesJAVAE59FBAE7A180"
-            ><div class='name'>JAVA基础</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/"
-            id="gkerblogcategoriesJAVAE59FBAE7A180E99DA2E8AF95E9A298"
-            ><div class='name'>JAVA基础面试题</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JVM/" href="/gkerblog/categories/JVM/"
-            id="gkerblogcategoriesJVM"
-            ><div class='name'>JVM</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Spring/" href="/gkerblog/categories/Spring/"
-            id="gkerblogcategoriesSpring"
-            ><div class='name'>Spring</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/TomCat/" href="/gkerblog/categories/TomCat/"
-            id="gkerblogcategoriesTomCat"
-            ><div class='name'>TomCat</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" href="/gkerblog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"
-            id="gkerblogcategoriesE695B0E68DAEE7BB93E69E84E4B88EE7AE97E6B395"
-            ><div class='name'>数据结构与算法</div><div class='badge'>(3)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#LRU%E7%BC%93%E5%AD%98%E6%B7%98%E6%B1%B0%E7%AE%97%E6%B3%95"><span class="toc-text">LRU缓存淘汰算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E4%B8%8E%E9%93%BE%E8%A1%A8%E5%8C%BA%E5%88%AB"><span class="toc-text">数组与链表区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8%E7%9A%84%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">链表的常见数据结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%88%A0%E9%99%A4%E4%B8%8E%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C%E5%86%8D%E5%88%86%E6%9E%90"><span class="toc-text">链表中的删除与插入操作再分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A5%E7%A9%BA%E9%97%B4%E6%8D%A2%E6%97%B6%E9%97%B4%EF%BC%8C%E4%BB%A5%E6%97%B6%E9%97%B4%E6%8D%A2%E7%A9%BA%E9%97%B4"><span class="toc-text">以空间换时间，以时间换空间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E4%B8%8E%E9%93%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%80%A7%E8%83%BD%E6%AF%94%E6%8B%BC"><span class="toc-text">数组与链表数据结构性能比拼</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LRU%E7%BC%93%E5%AD%98%E6%B7%98%E6%B1%B0%E7%AE%97%E6%B3%95%E5%9F%BA%E4%BA%8E%E9%93%BE%E8%A1%A8%E5%AE%9E%E7%8E%B0"><span class="toc-text">LRU缓存淘汰算法基于链表实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E6%98%AF%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-text">如何判断一个字符串是否是回文字符串</span></a></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/gkerblog/tags/Git-%E5%9F%BA%E7%A1%80/" style="font-size: 17.33px; color: #828282">Git 基础</a> <a href="/gkerblog/tags/Hexo%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">Hexo博客</a> <a href="/gkerblog/tags/JAVA%E5%9F%BA%E7%A1%80/" style="font-size: 20.67px; color: #6c6c6c">JAVA基础</a> <a href="/gkerblog/tags/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 24px; color: #555">JAVA基础面试题</a> <a href="/gkerblog/tags/JVM/" style="font-size: 17.33px; color: #828282">JVM</a> <a href="/gkerblog/tags/WEB%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 14px; color: #999">WEB应用服务器</a> <a href="/gkerblog/tags/freemark/" style="font-size: 14px; color: #999">freemark</a> <a href="/gkerblog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 20.67px; color: #6c6c6c">数据结构与算法</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
 		  
@@ -943,21 +774,21 @@ Write once, run anywhere
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="数据结构与算法-链表";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
