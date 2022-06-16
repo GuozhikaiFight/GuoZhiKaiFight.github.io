@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2022 - gker&#39;s blog</title>
+  <title>面向对象 - gker&#39;s blog</title>
+  
+    <meta name="keywords" content="设计模式">
   
 
   
@@ -106,7 +106,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -357,7 +357,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="http://gker.gitee.io/tc/blogBackground/bj2.jpg"></div>
           
@@ -389,497 +389,369 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
     
-      
+    
+      <h1 class="title">
+        面向对象
+      </h1>
+      <div class='new-meta-box'>
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/final-finally-finalize-%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/">
-        final finally finalize 有何不同?
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        final finally finalize 有何不同
-final
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="https://gker.gitee.io/hexoblog" rel="nofollow">
+    <img no-lazy src="">
+    <p>gker</p>
+  </a>
+</div>
 
-final修饰符可修饰类、方法、变量
-类无法被继承、方法不可被重写、变量不可被修改
-final关键字经常大量出现在源码或第三方类库中，可有效避免API使用者更改基础功能，在并发编程中有利于减少额外的同步开销。
-final只可约束相关变量引用不可以被赋值，但final修饰的对象行为不会被final影响
-
-
-finally
-
-...
-      
-    
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/gkerblog/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2022-05-26</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年6月16日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="面向对象" data-path="/gkerblog/2022/06/16/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h2 id="我们所谈论的面向对象到底是什么？"><a href="#我们所谈论的面向对象到底是什么？" class="headerlink" title="我们所谈论的面向对象到底是什么？"></a>我们所谈论的面向对象到底是什么？</h2><h3 id="OOP与OOPL"><a href="#OOP与OOPL" class="headerlink" title="OOP与OOPL"></a>OOP与OOPL</h3><blockquote>
+<ul>
+<li>OOP  (Object Oriented Programming) 面向对象编程<blockquote>
+<ul>
+<li>面向对象编程是一种以类或对象作为组织代码基本单元的编程范式或编程风格，并将继承、封装、多态、抽象四个特性作为代码设计和实现的基石</li>
+</ul>
+</blockquote>
+</li>
+<li>OOPL (Object Oriented Programming Language ) 面向对象编程语言<blockquote>
+<ul>
+<li>OOPL是支持类或对象的语法机制，能方便地实现面向对象编程四大特性的编程语言</li>
+</ul>
+</blockquote>
+</li>
+<li>OOP与OOPL之间没有充分必要的关联，OOP不都是通过OOPL来进行，OOPL写出的代码也不一定都是OOP编程风格</li>
+<li>非严格意义上来讲，只要某种编程语言支持类或对象的语法概念，并以此为组织代码的基本单元，便可以粗略认为它就是面向对象的编程语言。</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="面向对象分析（OOA）与面向对象设计-OOD"><a href="#面向对象分析（OOA）与面向对象设计-OOD" class="headerlink" title="面向对象分析（OOA）与面向对象设计(OOD)"></a>面向对象分析（OOA）与面向对象设计(OOD)</h2><blockquote>
+<ul>
+<li>面向对象软件开发的三个阶段 OOA 分析 -》OOD 设计 -》OOP 实现</li>
+<li>围绕对象与类进行需求的分析与设计，分析与设计最终产出的是类的设计，程序可被拆解为哪些类、类与类之间如何交互等等。</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="封装、继承、多态、抽象解决了哪些编程问题"><a href="#封装、继承、多态、抽象解决了哪些编程问题" class="headerlink" title="封装、继承、多态、抽象解决了哪些编程问题"></a>封装、继承、多态、抽象解决了哪些编程问题</h2><h3 id="封装-Encapsulation"><a href="#封装-Encapsulation" class="headerlink" title="封装(Encapsulation)"></a>封装(Encapsulation)</h3><blockquote>
+<ul>
+<li>封装也叫做信息隐藏或者数据访问保护，类通过暴露有限的访问接口，授权外部仅能通过类提供的方式来访问内部信息或者数据。</li>
+<li>封装需要编程语言本身提供一定的语法机制（访问权限控制）来进行支持</li>
+<li>访问权限控制：Java中是访问权限修饰符 public protected private default</li>
+</ul>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>修饰符</th>
+<th>同类</th>
+<th>同包</th>
+<th>子类</th>
+<th>不同包</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>public</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>protected</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td>/</td>
+</tr>
+<tr>
+<td>default</td>
+<td>Y</td>
+<td>Y</td>
+<td>/</td>
+<td>/</td>
+</tr>
+<tr>
+<td>private</td>
+<td>Y</td>
+<td>/</td>
+<td>/</td>
+<td>/</td>
+</tr>
+</tbody></table>
+<h3 id="封装的意义"><a href="#封装的意义" class="headerlink" title="封装的意义"></a>封装的意义</h3><blockquote>
+<ul>
+<li>若类中的属性不存在访问权限控制，那么任何人都可对类中的属性进行篡改</li>
+<li>封装将相关业务逻辑实现细节进行隐藏，相关业务调用者只需要调用特定的方法即可完成业务。</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="抽象-Abstraction"><a href="#抽象-Abstraction" class="headerlink" title="抽象(Abstraction)"></a>抽象(Abstraction)</h3><blockquote>
+<ul>
+<li>抽象相对于封装来讲，是将方法的实现细节进行隐藏，调用者只需关心提供了哪些方法，并不需要知道这些功能如何实现的。</li>
+<li>Java中通过 interface 与 abstract 关键字实现抽象</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">IPictureStorage</span>&#123;</span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">savePicture</span><span class="params">(Picture picture)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">PictureStorage</span> <span class="keyword">implements</span> <span class="title class_">IPictureStorage</span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">savePicture</span><span class="params">(Picture picture)</span>&#123;.....&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>抽象只需要提供“函数”语法机制就可以实现抽象的特性，“函数”包裹具体的实现逻辑，这本身就是一种抽象，调用者不需要去研究函数内部的实现逻辑，并没有很强的“特异性”所以有时候并不被看做是面向对象的特性。</li>
+</ul>
+</blockquote>
+<h3 id="抽象的意义"><a href="#抽象的意义" class="headerlink" title="抽象的意义"></a>抽象的意义</h3><blockquote>
+<ul>
+<li>抽象可以只关注于功能点，不关注实现的设计思路可以有效忽略一些非关键性的实现细节。</li>
+<li>在定义或命名类的方法时，不需要暴露太多细节，例如getAliyunPictureUrl()叫做getPictureUrl() 当要改变实现逻辑时不需要修改或重命名方法名称。</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="继承（Inheritance）"><a href="#继承（Inheritance）" class="headerlink" title="继承（Inheritance）"></a>继承（Inheritance）</h3><blockquote>
+<ul>
+<li>用于描述 is-a关系，猫是一种哺乳动物，继承可分为单继承与多继承，可单独继承一个父类或继承多个父类。</li>
+<li>各个编程语言中实现继承特性的语法机制：<blockquote>
+<ol>
+<li>Java extends</li>
+<li>C++,C#  :</li>
+<li>Pyhton paraentheses()</li>
+<li>Ruby &lt;</li>
+</ol>
+</blockquote>
+</li>
+<li>单继承语言 Java PHP C# Ruby 多继承语言 C++ Python 。。</li>
+</ul>
+</blockquote>
+<h3 id="继承的意义"><a href="#继承的意义" class="headerlink" title="继承的意义"></a>继承的意义</h3><blockquote>
+<ul>
+<li>实现代码复用</li>
+<li>使用继承过多会导致代码可读性变差，可维护性变差，子类和父类高度藕合，修改父类会影响到子类</li>
+</ul>
+</blockquote>
+<h3 id="多态（Polymorphism）"><a href="#多态（Polymorphism）" class="headerlink" title="多态（Polymorphism）"></a>多态（Polymorphism）</h3><blockquote>
+<ul>
+<li>子类代替父类</li>
+<li>java中实现多态需要的三个语法机制</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DynamicArray</span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">add</span><span class="params">()</span>&#123;</span><br><span class="line">        System.out.print(<span class="string">&quot;父类add方法&quot;</span>)；</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SortedDynamicArray</span> <span class="keyword">extends</span> <span class="title class_">DynamicArray</span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">add</span><span class="params">()</span>&#123;</span><br><span class="line">         System.out.print(<span class="string">&quot;子类add方法&quot;</span>)；</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String args[])</span>&#123;</span><br><span class="line">        <span class="type">DynamicArray</span> <span class="variable">test</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SortedDynamicArray</span>();</span><br><span class="line">        test.add();<span class="comment">//子类add方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<ol>
+<li>支持父类对象可引用子类</li>
+<li>支持继承</li>
+<li>支持子类重写(Override)父类中的方法</li>
+</ol>
+</blockquote>
+<ul>
+<li>接口实现多态</li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">Iterator</span>&#123;</span><br><span class="line">    String <span class="title function_">next</span><span class="params">()</span>;</span><br><span class="line">    String <span class="title function_">remove</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> Class Array <span class="keyword">implements</span> <span class="title class_">Iterator</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">next</span><span class="params">()</span>&#123;..........&#125;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">remove</span><span class="params">()</span>&#123;..........&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> Class LinkedList  <span class="keyword">implements</span> <span class="title class_">Iterator</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">next</span><span class="params">()</span>&#123;..........&#125;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">remove</span><span class="params">()</span>&#123;..........&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">demo</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String args[])</span>&#123;</span><br><span class="line">        <span class="type">Iterator</span> <span class="variable">demo</span>  <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Array</span>();</span><br><span class="line">        demo.next();</span><br><span class="line">        <span class="type">Iterator</span> <span class="variable">demo2</span>  <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">LinkedList</span>();</span><br><span class="line">        demo2.next();</span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li>继承或接口实现多态在java中需要一是有类与类之间存在继承关系，需实现其接口。</li>
+</ul>
+</blockquote>
+<h3 id="多态的意义"><a href="#多态的意义" class="headerlink" title="多态的意义"></a>多态的意义</h3><blockquote>
+<ul>
+<li>可提高代码的可扩展性与复用性</li>
+</ul>
+</blockquote>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/final-finally-finalize-%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2022-06-16T19:58:48+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年6月16日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/java-%E4%B8%AD%E7%9A%84-Exception-%E4%B8%8E-Error/">
-        java 中的 Exception 与 Error
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Exception Error区别
-Java中的Throwable Exception Error设计与分类
-典型回答：Exception 与 Error都继承了Throwable类，在Java中只有Throwable类型的实例才可以被抛出（throw）或者捕获（catch）Exception是程序正常运行中可预料的意外情况，可能并应当进行捕获。
+  <div class="new-meta-item meta-tags"><a class="tag" href="/gkerblog/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>设计模式</p></a></div>
 
-checked （可检查异常）：编译期的一...
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gker.gitee.io/gkerblog/2022/06/16/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/&title=面向对象 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gker.gitee.io/gkerblog/2022/06/16/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/&title=面向对象 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gker.gitee.io/gkerblog/2022/06/16/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/&title=面向对象 - gker's blog&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/java-%E4%B8%AD%E7%9A%84-Exception-%E4%B8%8E-Error/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/19/JVM-03-java%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BDclass%E7%B1%BB/">
-        JVM-03-java虚拟机如何加载class类
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java中的基本数据类型
-为什么在谈论Java虚拟机时如何加载class类时会优先谈关于Java的数据类型的话题？
-
-在java中除去基本数据类型还存在引用数据类型，但基本数据类型已经由Java虚拟机预先定义完成，刨除基本数据类型后，存在的引用数据类型分为以下四类
-
-
-类
-接口
-数组
-泛型参数真正经由jvm进行加载的引用类型只有类、与接口两类，并且都有对应的字节流。而jvm类加载过程，实际上...
-      
-    
+    </div>
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-19</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JVM/">JVM</a>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/19/JVM-03-java%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BDclass%E7%B1%BB/'>
-            阅读全文
-          </a>
-        </div>
       
-    </div>
-  
+        <a class='next' href='/gkerblog/2022/06/14/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E3%80%81%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E3%80%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%81%E7%BC%96%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83%E3%80%81%E9%87%8D%E6%9E%84%EF%BC%8C%E4%BA%94%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/'>
+          <p class='title'>面向对象、设计原则、设计模式、编编程规范、重构，五者之间的关系<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>主流编程范式或者编程风格
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/15/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/">
-        Java中的注解与反射
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        注解 Annotation
-
-基本格式： @ 注释名
-使用位置： package class method filed上
+面向过程
+面向对象
+函数式编程
 
 
-内置注解(Java本身自带的注解)
-
-@Override 重写 不做解释
-@Deprecated 不鼓励使用这样的元素
-@SuppressWarnings 镇压警告信息 可传参
+面向对象编程因其具有丰富的特性【封装、继承、多态、抽象】，是实现很多设计原则与设计模式的基础。
 
 
-元注解 解释其他注解的注解
 
-@Target 描述注解使用范围
-@Retention ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/">JAVA基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/15/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/'>
-            阅读全文
-          </a>
-        </div>
+面向对象七大知识点
+
+面向对...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/08/GIT%E7%9F%A5%E8%AF%86/">
-        GIT知识
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        .git目录文件
-
-HEAD文件
- 存放当前Git工作指向分支 ：ref: refs/heads/master 切换路径后会发生变化
-
-
-config文件 
-本地仓库配置信息，会设置在config文件中
-
-
-refs文件 
-
-1 heads 分支 heads分支文件中会存在多个文件，每个文件中存放的类似指针，会指向相应commit 
-2 tags 里程碑
-
-
-
-objects 存放对象 
-
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/">Git 基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/08/GIT%E7%9F%A5%E8%AF%86/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/30/GIT%E5%9F%BA%E7%A1%80/">
-        GIT基础命令
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Windows中的cmd命令
-
-cls 清屏
-
-
-GIT基础命令
-
- git config –global/local/system 设置命令除了作用域不一致其他都相同
-1 git –verison 查看GT版本
-2 git config –global –list 查看git用户信息
-3 git config –global user.name ‘your_name’
-4 git conf...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/">Git 基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/30/GIT%E5%9F%BA%E7%A1%80/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/27/JVM-01-java%E4%BB%A3%E7%A0%81%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/">
-        JVM-01-java代码是如何运行的
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        01 | JAVA中的JVM是如何识别运行高级语言所编写的代码的？
-
-三个问题
-
-
-
-我们对于JAVA所宣传的“一次编译，到处运行”是怎样理解的呢？
-
-
-
-JAVA作为一门高度抽象的语言，在经过成熟的IDE编写后，那些能被我们所看懂的代码，到底是如何在JVM中运行的呢？
-
-
-
-JAVA语言到底是编译执行还是解释执行？
+  </article>
 
 
 
 
 
-Write once, run anywhere
-我们在学习JV...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JVM/">JVM</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/27/JVM-01-java%E4%BB%A3%E7%A0%81%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/">
-        Java每日一记
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java8中新增的StringJoiner工具类
-2022年5月26日15:35:21 Java8中新增的StringJoiner工具类
-
-12StringJoiner stringjoiner = new StringJoiner(&quot;分割符&quot;);StringJoiner stringjoiner = new StringJoiner(&quot;分割符&quot;,&q...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-07</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/">JAVA基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/gkerblog/archives/2022/">
-            <section class="post prev white-box shadow" >
-              <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 2
-        </p>
-        
-      </div>
-    
-  
-
-
-	
 </div>
 <aside class='l_side'>
   
@@ -887,166 +759,28 @@ Write once, run anywhere
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/gkerblog/about/'>
-          <img no-lazy src='http://gker.gitee.io/tc/blogBackground/me.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">gker's blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/gkerblog/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/gkerblog/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/"
-            id="gkerblogcategoriesGit-E59FBAE7A180"
-            ><div class='name'>Git 基础</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Hexo%E5%8D%9A%E5%AE%A2/" href="/gkerblog/categories/Hexo%E5%8D%9A%E5%AE%A2/"
-            id="gkerblogcategoriesHexoE58D9AE5AEA2"
-            ><div class='name'>Hexo博客</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/"
-            id="gkerblogcategoriesJAVAE59FBAE7A180"
-            ><div class='name'>JAVA基础</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/"
-            id="gkerblogcategoriesJAVAE59FBAE7A180E99DA2E8AF95E9A298"
-            ><div class='name'>JAVA基础面试题</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/JVM/" href="/gkerblog/categories/JVM/"
-            id="gkerblogcategoriesJVM"
-            ><div class='name'>JVM</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/Spring/" href="/gkerblog/categories/Spring/"
-            id="gkerblogcategoriesSpring"
-            ><div class='name'>Spring</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/TomCat/" href="/gkerblog/categories/TomCat/"
-            id="gkerblogcategoriesTomCat"
-            ><div class='name'>TomCat</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" href="/gkerblog/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"
-            id="gkerblogcategoriesE695B0E68DAEE7BB93E69E84E4B88EE7AE97E6B395"
-            ><div class='name'>数据结构与算法</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/gkerblog/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" href="/gkerblog/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"
-            id="gkerblogcategoriesE8AEBEE8AEA1E6A8A1E5BC8F"
-            ><div class='name'>设计模式</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E6%89%80%E8%B0%88%E8%AE%BA%E7%9A%84%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">我们所谈论的面向对象到底是什么？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#OOP%E4%B8%8EOOPL"><span class="toc-text">OOP与OOPL</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%88%86%E6%9E%90%EF%BC%88OOA%EF%BC%89%E4%B8%8E%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1-OOD"><span class="toc-text">面向对象分析（OOA）与面向对象设计(OOD)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%81%E8%A3%85%E3%80%81%E7%BB%A7%E6%89%BF%E3%80%81%E5%A4%9A%E6%80%81%E3%80%81%E6%8A%BD%E8%B1%A1%E8%A7%A3%E5%86%B3%E4%BA%86%E5%93%AA%E4%BA%9B%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98"><span class="toc-text">封装、继承、多态、抽象解决了哪些编程问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E8%A3%85-Encapsulation"><span class="toc-text">封装(Encapsulation)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%81%E8%A3%85%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-text">封装的意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1-Abstraction"><span class="toc-text">抽象(Abstraction)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-text">抽象的意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%EF%BC%88Inheritance%EF%BC%89"><span class="toc-text">继承（Inheritance）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E6%89%BF%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-text">继承的意义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%EF%BC%88Polymorphism%EF%BC%89"><span class="toc-text">多态（Polymorphism）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E6%80%81%E7%9A%84%E6%84%8F%E4%B9%89"><span class="toc-text">多态的意义</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/gkerblog/tags/Git-%E5%9F%BA%E7%A1%80/" style="font-size: 17.33px; color: #828282">Git 基础</a> <a href="/gkerblog/tags/Hexo%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">Hexo博客</a> <a href="/gkerblog/tags/JAVA%E5%9F%BA%E7%A1%80/" style="font-size: 20.67px; color: #6c6c6c">JAVA基础</a> <a href="/gkerblog/tags/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/" style="font-size: 24px; color: #555">JAVA基础面试题</a> <a href="/gkerblog/tags/JVM/" style="font-size: 17.33px; color: #828282">JVM</a> <a href="/gkerblog/tags/WEB%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/" style="font-size: 14px; color: #999">WEB应用服务器</a> <a href="/gkerblog/tags/freemark/" style="font-size: 14px; color: #999">freemark</a> <a href="/gkerblog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 20.67px; color: #6c6c6c">数据结构与算法</a> <a href="/gkerblog/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 17.33px; color: #828282">设计模式</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
 		  
@@ -1055,21 +789,21 @@ Write once, run anywhere
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="面向对象";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>

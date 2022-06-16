@@ -24,7 +24,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2022 - gker&#39;s blog</title>
+  <title>分类：设计模式 - gker&#39;s blog</title>
   
 
   
@@ -106,7 +106,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -357,7 +357,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="full" class='cover-wrapper  dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="http://gker.gitee.io/tc/blogBackground/bj2.jpg"></div>
           
@@ -388,11 +388,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper" id="pjax-container">
           
 
+
 <div class='l_main'>
-	
-		
+  
+    
+      
   <section class="post-list">
     
+      
+        
+          
+        
+          
+        
+      
+    
     
       
         
@@ -404,26 +414,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/final-finally-finalize-%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/">
-        final finally finalize 有何不同?
+      <a href="/gkerblog/2022/06/16/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+        面向对象
       </a>
     </h2>
   
   <div class='md'>
     
       
-        final finally finalize 有何不同
-final
+        我们所谈论的面向对象到底是什么？OOP与OOPL
 
-final修饰符可修饰类、方法、变量
-类无法被继承、方法不可被重写、变量不可被修改
-final关键字经常大量出现在源码或第三方类库中，可有效避免API使用者更改基础功能，在并发编程中有利于减少额外的同步开销。
-final只可约束相关变量引用不可以被赋值，但final修饰的对象行为不会被final影响
+OOP  (Object Oriented Programming) 面向对象编程
+
+面向对象编程是一种以类或对象作为组织代码基本单元的编程范式或编程风格，并将继承、封装、多态、抽象四个特性作为代码设计和实现的基石
 
 
-finally
 
-...
+OOPL (Object Oriented Programming Language ) 面向对象编程语言
+
+OOPL是...
       
     
   </div>
@@ -431,15 +440,15 @@ finally
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2022-05-26</time>
+        <time>2022-06-16</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
+          <a class="category-link" href="/gkerblog/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
         
       </div>
       
         <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/final-finally-finalize-%E6%9C%89%E4%BD%95%E4%B8%8D%E5%90%8C/'>
+          <a class='readmore' href='/gkerblog/2022/06/16/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/'>
             阅读全文
           </a>
         </div>
@@ -461,19 +470,33 @@ finally
   
     
     <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/26/java-%E4%B8%AD%E7%9A%84-Exception-%E4%B8%8E-Error/">
-        java 中的 Exception 与 Error
+      <a href="/gkerblog/2022/06/14/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E3%80%81%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E3%80%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%81%E7%BC%96%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83%E3%80%81%E9%87%8D%E6%9E%84%EF%BC%8C%E4%BA%94%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/">
+        面向对象、设计原则、设计模式、编编程规范、重构，五者之间的关系
       </a>
     </h2>
   
   <div class='md'>
     
       
-        Exception Error区别
-Java中的Throwable Exception Error设计与分类
-典型回答：Exception 与 Error都继承了Throwable类，在Java中只有Throwable类型的实例才可以被抛出（throw）或者捕获（catch）Exception是程序正常运行中可预料的意外情况，可能并应当进行捕获。
+        主流编程范式或者编程风格
 
-checked （可检查异常）：编译期的一...
+面向过程
+面向对象
+函数式编程
+
+
+面向对象编程因其具有丰富的特性【封装、继承、多态、抽象】，是实现很多设计原则与设计模式的基础。
+
+
+
+面向对象七大知识点
+
+面向对象四大特性:继承、封装、多态、抽象
+面向对象编程与面向过程编程的区别与联系
+面向对象分析、面向对象设计、面向对象编程
+接口和抽象类的区别以及各自的应用场景
+基于接口而非实现编程的设计思想
+多用组合少用...
       
     
   </div>
@@ -481,370 +504,15 @@ checked （可检查异常）：编译期的一...
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2022-05-26</time>
+        <time>2022-06-14</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98/">JAVA基础面试题</a>
+          <a class="category-link" href="/gkerblog/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">设计模式</a>
         
       </div>
       
         <div>
-          <a class='readmore' href='/gkerblog/2022/05/26/java-%E4%B8%AD%E7%9A%84-Exception-%E4%B8%8E-Error/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/19/JVM-03-java%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BDclass%E7%B1%BB/">
-        JVM-03-java虚拟机如何加载class类
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java中的基本数据类型
-为什么在谈论Java虚拟机时如何加载class类时会优先谈关于Java的数据类型的话题？
-
-在java中除去基本数据类型还存在引用数据类型，但基本数据类型已经由Java虚拟机预先定义完成，刨除基本数据类型后，存在的引用数据类型分为以下四类
-
-
-类
-接口
-数组
-泛型参数真正经由jvm进行加载的引用类型只有类、与接口两类，并且都有对应的字节流。而jvm类加载过程，实际上...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-19</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JVM/">JVM</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/19/JVM-03-java%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BDclass%E7%B1%BB/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/15/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/">
-        Java中的注解与反射
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        注解 Annotation
-
-基本格式： @ 注释名
-使用位置： package class method filed上
-
-
-内置注解(Java本身自带的注解)
-
-@Override 重写 不做解释
-@Deprecated 不鼓励使用这样的元素
-@SuppressWarnings 镇压警告信息 可传参
-
-
-元注解 解释其他注解的注解
-
-@Target 描述注解使用范围
-@Retention ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/">JAVA基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/15/Java%E4%B8%AD%E7%9A%84%E6%B3%A8%E8%A7%A3%E4%B8%8E%E5%8F%8D%E5%B0%84/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/05/08/GIT%E7%9F%A5%E8%AF%86/">
-        GIT知识
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        .git目录文件
-
-HEAD文件
- 存放当前Git工作指向分支 ：ref: refs/heads/master 切换路径后会发生变化
-
-
-config文件 
-本地仓库配置信息，会设置在config文件中
-
-
-refs文件 
-
-1 heads 分支 heads分支文件中会存在多个文件，每个文件中存放的类似指针，会指向相应commit 
-2 tags 里程碑
-
-
-
-objects 存放对象 
-
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-05-08</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/">Git 基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/05/08/GIT%E7%9F%A5%E8%AF%86/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/30/GIT%E5%9F%BA%E7%A1%80/">
-        GIT基础命令
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Windows中的cmd命令
-
-cls 清屏
-
-
-GIT基础命令
-
- git config –global/local/system 设置命令除了作用域不一致其他都相同
-1 git –verison 查看GT版本
-2 git config –global –list 查看git用户信息
-3 git config –global user.name ‘your_name’
-4 git conf...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-30</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/Git-%E5%9F%BA%E7%A1%80/">Git 基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/30/GIT%E5%9F%BA%E7%A1%80/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/27/JVM-01-java%E4%BB%A3%E7%A0%81%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/">
-        JVM-01-java代码是如何运行的
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        01 | JAVA中的JVM是如何识别运行高级语言所编写的代码的？
-
-三个问题
-
-
-
-我们对于JAVA所宣传的“一次编译，到处运行”是怎样理解的呢？
-
-
-
-JAVA作为一门高度抽象的语言，在经过成熟的IDE编写后，那些能被我们所看懂的代码，到底是如何在JVM中运行的呢？
-
-
-
-JAVA语言到底是编译执行还是解释执行？
-
-
-
-
-
-Write once, run anywhere
-我们在学习JV...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JVM/">JVM</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/27/JVM-01-java%E4%BB%A3%E7%A0%81%E6%98%AF%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C%E7%9A%84/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/gkerblog/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/">
-        Java每日一记
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Java8中新增的StringJoiner工具类
-2022年5月26日15:35:21 Java8中新增的StringJoiner工具类
-
-12StringJoiner stringjoiner = new StringJoiner(&quot;分割符&quot;);StringJoiner stringjoiner = new StringJoiner(&quot;分割符&quot;,&q...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2022-04-07</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/gkerblog/categories/JAVA%E5%9F%BA%E7%A1%80/">JAVA基础</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/gkerblog/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/'>
+          <a class='readmore' href='/gkerblog/2022/06/14/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E3%80%81%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E3%80%81%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%81%E7%BC%96%E7%BC%96%E7%A8%8B%E8%A7%84%E8%8C%83%E3%80%81%E9%87%8D%E6%9E%84%EF%BC%8C%E4%BA%94%E8%80%85%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB/'>
             阅读全文
           </a>
         </div>
@@ -861,25 +529,11 @@ Write once, run anywhere
   </section>
   
     
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/gkerblog/archives/2022/">
-            <section class="post prev white-box shadow" >
-              <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 2
-        </p>
-        
-      </div>
-    
   
 
 
-	
+    
+  
 </div>
 <aside class='l_side'>
   
@@ -1062,14 +716,14 @@ Write once, run anywhere
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.remove("show");
+  l_header.classList.add("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="half";
-    cover_wrapper.style.display="";
+    cover_wrapper.id="none";
+    cover_wrapper.style.display="none";
     
   
 </script>
