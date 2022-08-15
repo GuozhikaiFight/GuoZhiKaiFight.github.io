@@ -6,7 +6,7 @@
   <link href="https://gker.gitee.io/gkerblog/atom.xml" rel="self"/>
   
   <link href="https://gker.gitee.io/gkerblog/"/>
-  <updated>2022-06-16T11:58:48.392Z</updated>
+  <updated>2022-06-16T13:04:00.648Z</updated>
   <id>https://gker.gitee.io/gkerblog/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PS学习笔记</title>
+    <link href="https://gker.gitee.io/gkerblog/2022/06/16/PS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://gker.gitee.io/gkerblog/2022/06/16/PS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-06-16T13:03:20.000Z</published>
+    <updated>2022-06-16T13:04:00.648Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="PS笔记"><a href="#PS笔记" class="headerlink" title="PS笔记"></a>PS笔记</h2><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><blockquote></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\gkerblog\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\gkerblog\assets\js\A</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>面向对象</title>
@@ -453,9 +473,9 @@
     <link href="https://gker.gitee.io/gkerblog/2021/03/20/Spring/"/>
     <id>https://gker.gitee.io/gkerblog/2021/03/20/Spring/</id>
     <published>2021-03-20T03:15:41.000Z</published>
-    <updated>2021-03-31T12:50:10.077Z</updated>
+    <updated>2022-06-23T06:24:58.837Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Spring初识（一）"><a href="#Spring初识（一）" class="headerlink" title="Spring初识（一）"></a>Spring初识（一）</h2><hr><h3 id="控制反转（IOC）与依赖注入（DI）"><a href="#控制反转（IOC）与依赖注入（DI）" class="headerlink" title="控制反转（IOC）与依赖注入（DI）"></a>控制反转（IOC）与依赖注入（DI）</h3><p>提到Spring框架，不管是网上的资料或者是自己探索，在学习过程中避不开的两个概念一个是<strong>控制反转（IOC）</strong> 另一个是 <strong>依赖注入（DI）</strong> 但大都是讲述何为控制反转与依赖注入，最典型的代码是</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//由 B 实体中通过new 直接进行对象的声明与赋值</span><br><span class="line">B &#123;</span><br><span class="line">    A a = new A();</span><br><span class="line">&#125;</span><br><span class="line">//在 B 实体中通过set方法实现对对象的赋值</span><br><span class="line">B&#123;</span><br><span class="line">    A a;</span><br><span class="line">    public void setA(A a)&#123;</span><br><span class="line">        this.a=a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我也很迷惑采用<strong>IOC</strong>的好处，直到 <a href="https://www.zhihu.com/question/23277575/answer/24259844">https://www.zhihu.com/question/23277575/answer/24259844</a> 看到这篇文章</p><hr><h3 id="IOC的好处"><a href="#IOC的好处" class="headerlink" title="IOC的好处"></a>IOC的好处</h3><p>1.资源可由第三方直接进行配置与管理 **(IOC容器)**，这里所说的第三方是指不属于使用资源的双方。  </p><p>2.降低使用资源双方的依赖程度。</p><h3 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h3><p>1.生活中的网购，我们购买方需要买东西的时候（资源调用者），要借助于网购平台（第三方），而不是提供商品的工厂（资源提供者），反之，工厂想要卖物品时也只需跟第三方取得联系就可以。网购平台也可集中管理这些商品（bean）。<br>2.支付宝在网购交易流程中也属于一个第三方（IOC容器）。</p><h3 id="IOC-与-DI-的产生"><a href="#IOC-与-DI-的产生" class="headerlink" title="IOC 与 DI 的产生"></a>IOC 与 DI 的产生</h3><p>控制反转：资源双方互不依赖，资源调用时不依赖双方，活动由第三方负责管理。  </p><p>依赖注入：资源双方一方开放接口，在需要的时候，能够将另一注入进来。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Spring初识（一）"><a href="#Spring初识（一）" class="headerlink" title="Spring初识（一）"></a>Spring初识（一）</h2><hr><h3 id="框架、生态（框架衍生品）"><a href="#框架、生态（框架衍生品）" class="headerlink" title="框架、生态（框架衍生品）"></a>框架、生态（框架衍生品）</h3><hr><h3 id="控制反转（IOC）与依赖注入（DI）"><a href="#控制反转（IOC）与依赖注入（DI）" class="headerlink" title="控制反转（IOC）与依赖注入（DI）"></a>控制反转（IOC）与依赖注入（DI）</h3><blockquote><ul><li>提到Spring框架，不管是网上的资料或者是自己探索，在学习过程中避不开的两个概念一个是<strong>控制反转（IOC）</strong> 另一个是 <strong>依赖注入（DI）</strong> 但大都是讲述何为控制反转与依赖注入，最典型的代码是</li></ul></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//由 B 实体中通过new 直接进行对象的声明与赋值</span></span><br><span class="line">B &#123;</span><br><span class="line">    <span class="type">A</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">A</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//在 B 实体中通过set方法实现对对象的赋值</span></span><br><span class="line">B&#123;</span><br><span class="line">    A a;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setA</span><span class="params">(A a)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.a=a;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我也很迷惑采用<strong>IOC</strong>的好处，直到 <a href="https://www.zhihu.com/question/23277575/answer/24259844">https://www.zhihu.com/question/23277575/answer/24259844</a> 看到这篇文章</p><blockquote><ul><li>IOC容器（用于存放bean对象的容器）<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">beans</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">?</span> <span class="attr">class</span>=<span class="string">?</span> <span class="attr">...</span>若干属性&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">propery</span> <span class="attr">name</span>=<span class="string">?</span> <span class="attr">value</span>=<span class="string">?/</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure></li></ul></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">ApplicationContext</span> <span class="variable">ac</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ClassPathXmlApplicationContext</span>(<span class="string">&quot;applicationContext.xml&quot;</span>);</span><br><span class="line"><span class="type">XXX</span> <span class="variable">xx</span> <span class="operator">=</span> ac.getBean(XXX.class);</span><br><span class="line">xx.method();</span><br></pre></td></tr></table></figure><blockquote><ul><li>使用ApplicationContext 将xml中的配置变为对象的过程：<blockquote><ol><li>加载xml</li><li>解析xml</li><li>封装BeanDefinition（类定义信息）</li><li>实例化</li><li>放入容器 </li><li>通过容器获取 </li></ol></blockquote></li></ul></blockquote><blockquote><ul><li>将bean存入容器的集合框架<blockquote><ol><li>采用Map容器 通过getBean(key)值获取对象<blockquote><ul><li>Map用于存放bean对象的方式 key 与 value值应该存放什么</li></ul></blockquote></li></ol></blockquote></li></ul></blockquote><table><thead><tr><th>k</th><th>v</th></tr></thead><tbody><tr><td>String</td><td>Object</td></tr><tr><td>Class</td><td>Object</td></tr><tr><td>String</td><td>ObjectFactory</td></tr><tr><td>String</td><td>BeanDefinition</td></tr></tbody></table><blockquote><ul><li>三级缓存【解决Spring中的循环依赖】<blockquote><ul><li>what 循环依赖</li><li>Spring中的bean对象默认都为单例模式，即在容器中，bean对象只允许存在一个，那么当出现以下情况下便会产生循环依赖。</li><li>A 对象中存在对于B对象的引用 b  B对象中存在对于A对象的引用a 无论是往容器中存放A或B对象时便会产生循环依赖，存放A时，检索B对象是否在容器中存在，若不存在需要创建B ，创建B时需要查看A对象是否在容器中创建。 </li></ul></blockquote></li></ul></blockquote><hr><h3 id="IOC的好处"><a href="#IOC的好处" class="headerlink" title="IOC的好处"></a>IOC的好处</h3><p>1.资源可由第三方直接进行配置与管理 **(IOC容器)**，这里所说的第三方是指不属于使用资源的双方。  </p><p>2.降低使用资源双方的依赖程度。</p><h3 id="举个栗子"><a href="#举个栗子" class="headerlink" title="举个栗子"></a>举个栗子</h3><p>1.生活中的网购，我们购买方需要买东西的时候（资源调用者），要借助于网购平台（第三方），而不是提供商品的工厂（资源提供者），反之，工厂想要卖物品时也只需跟第三方取得联系就可以。网购平台也可集中管理这些商品（bean）。<br>2.支付宝在网购交易流程中也属于一个第三方（IOC容器）。</p><h3 id="IOC-与-DI-的产生"><a href="#IOC-与-DI-的产生" class="headerlink" title="IOC 与 DI 的产生"></a>IOC 与 DI 的产生</h3><p>控制反转：资源双方互不依赖，资源调用时不依赖双方，活动由第三方负责管理。  </p><p>依赖注入：资源双方一方开放接口，在需要的时候，能够将另一注入进来。</p>]]></content>
     
     
       
@@ -469,30 +489,6 @@
     
     
     <category term="freemark" scheme="https://gker.gitee.io/gkerblog/tags/freemark/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TomCat杂项</title>
-    <link href="https://gker.gitee.io/gkerblog/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/"/>
-    <id>https://gker.gitee.io/gkerblog/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/</id>
-    <published>2021-03-20T03:15:41.000Z</published>
-    <updated>2021-03-31T12:54:47.104Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\gkerblog\assets\css\APlayer.min.css"><script src="\gkerblog\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Tomcat杂项"><a href="#Tomcat杂项" class="headerlink" title="Tomcat杂项"></a>Tomcat杂项</h2><hr><p>Tomcat简单来讲是一个Web服务器，同时也是一个存放<strong>JSP</strong>与<strong>SERLVET</strong>的容器</p><hr><h3 id="Tomcat中不常见的操作"><a href="#Tomcat中不常见的操作" class="headerlink" title="Tomcat中不常见的操作"></a>Tomcat中不常见的操作</h3><h4 id="1-配置虚拟目录"><a href="#1-配置虚拟目录" class="headerlink" title="1.  配置虚拟目录"></a>1.  配置虚拟目录</h4><p>配置虚拟目录的产生是因为如果存在多个Web站点，并且在服务器资源有限的情况之下，依照默认的做法需要将所有的Web站点存放于WebApps目录之下，这样会导致服务器资源更加紧张。不利于单个Web站点的管理。</p><p>针对上述场景的产生，需要将Web站点进行分散，并需要将分散所创建的路径（目录）交给Web服务器管理（Tomcat） <strong>: 虚拟目录的映射</strong></p><h4 id="2-配置虚拟主机"><a href="#2-配置虚拟主机" class="headerlink" title="2.  配置虚拟主机"></a>2.  配置虚拟主机</h4><p>配置虚拟主机是解决多个网站多个域名公用一台服务器的场景，一般来讲一个Tomcat只运行一个网站。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\gkerblog\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\gkerblog\assets\js\A</summary>
-      
-    
-    
-    
-    <category term="TomCat" scheme="https://gker.gitee.io/gkerblog/categories/TomCat/"/>
-    
-    
-    <category term="WEB应用服务器" scheme="https://gker.gitee.io/gkerblog/tags/WEB%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
