@@ -598,7 +598,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gitlab.com/1792097009gker/gkerhexoblog.git/2021/03/20/Spring/&title=Spring - gker's blog&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gitlab.com/1792097009gker/gkerblog.git/2021/03/20/Spring/&title=Spring - gker's blog&summary="
           
           >
           
@@ -610,7 +610,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gitlab.com/1792097009gker/gkerhexoblog.git/2021/03/20/Spring/&title=Spring - gker's blog&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gitlab.com/1792097009gker/gkerblog.git/2021/03/20/Spring/&title=Spring - gker's blog&summary="
           
           >
           
@@ -622,7 +622,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gitlab.com/1792097009gker/gkerhexoblog.git/2021/03/20/Spring/&title=Spring - gker's blog&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gitlab.com/1792097009gker/gkerblog.git/2021/03/20/Spring/&title=Spring - gker's blog&summary="
           
           >
           
@@ -652,22 +652,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/04/07/Java%E6%AF%8F%E6%97%A5%E7%96%91%E6%83%91/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Java每日一记</p>
-          <p class='content'>Java8中新增的StringJoiner工具类
-2022年5月26日15:35:21 Java8中新增的StringJoiner工具类
-
-12StringJoiner stringjoiner...</p>
-        </a>
-      
-      
-        <a class='next' href='/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/'>
-          <p class='title'>TomCat杂项<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='prev' href='/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>TomCat杂项</p>
           <p class='content'>Tomcat杂项
 Tomcat简单来讲是一个Web服务器，同时也是一个存放JSP与SERLVET的容器
 
 Tomcat中不常见的操作1.  配置虚拟目录配置虚拟目录的产生是因为如果存在多个Web...</p>
         </a>
+      
       
     </div>
   
@@ -1288,7 +1280,7 @@ function setSearchService() {
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'https://gitlab.com/1792097009gker/gkerhexoblog.git' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'https://gitlab.com/1792097009gker/gkerblog.git' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -1306,7 +1298,7 @@ function setSearchService() {
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'https://gitlab.com/1792097009gker/gkerhexoblog.git' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'https://gitlab.com/1792097009gker/gkerblog.git' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -1328,7 +1320,7 @@ function setSearchService() {
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'https://gitlab.com/1792097009gker/gkerhexoblog.git' + pv.getAttribute('data-path');
+          var url = 'https://gitlab.com/1792097009gker/gkerblog.git' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增
