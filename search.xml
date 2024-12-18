@@ -467,31 +467,6 @@
     
     
     <entry>
-      <title>TomCat杂项</title>
-      <link href="/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/"/>
-      <url>/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Tomcat杂项"><a href="#Tomcat杂项" class="headerlink" title="Tomcat杂项"></a>Tomcat杂项</h2><hr><p>Tomcat简单来讲是一个Web服务器，同时也是一个存放<strong>JSP</strong>与<strong>SERLVET</strong>的容器</p><hr><h3 id="Tomcat中不常见的操作"><a href="#Tomcat中不常见的操作" class="headerlink" title="Tomcat中不常见的操作"></a>Tomcat中不常见的操作</h3><h4 id="1-配置虚拟目录"><a href="#1-配置虚拟目录" class="headerlink" title="1.  配置虚拟目录"></a>1.  配置虚拟目录</h4><p>配置虚拟目录的产生是因为如果存在多个Web站点，并且在服务器资源有限的情况之下，依照默认的做法需要将所有的Web站点存放于WebApps目录之下，这样会导致服务器资源更加紧张。不利于单个Web站点的管理。</p><p>针对上述场景的产生，需要将Web站点进行分散，并需要将分散所创建的路径（目录）交给Web服务器管理（Tomcat） <strong>: 虚拟目录的映射</strong></p><h4 id="2-配置虚拟主机"><a href="#2-配置虚拟主机" class="headerlink" title="2.  配置虚拟主机"></a>2.  配置虚拟主机</h4><p>配置虚拟主机是解决多个网站多个域名公用一台服务器的场景，一般来讲一个Tomcat只运行一个网站。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> TomCat </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> WEB应用服务器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Spring</title>
       <link href="/2021/03/20/Spring/"/>
       <url>/2021/03/20/Spring/</url>
@@ -509,6 +484,31 @@
         <tags>
             
             <tag> freemark </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>TomCat杂项</title>
+      <link href="/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/"/>
+      <url>/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Tomcat杂项"><a href="#Tomcat杂项" class="headerlink" title="Tomcat杂项"></a>Tomcat杂项</h2><hr><p>Tomcat简单来讲是一个Web服务器，同时也是一个存放<strong>JSP</strong>与<strong>SERLVET</strong>的容器</p><hr><h3 id="Tomcat中不常见的操作"><a href="#Tomcat中不常见的操作" class="headerlink" title="Tomcat中不常见的操作"></a>Tomcat中不常见的操作</h3><h4 id="1-配置虚拟目录"><a href="#1-配置虚拟目录" class="headerlink" title="1.  配置虚拟目录"></a>1.  配置虚拟目录</h4><p>配置虚拟目录的产生是因为如果存在多个Web站点，并且在服务器资源有限的情况之下，依照默认的做法需要将所有的Web站点存放于WebApps目录之下，这样会导致服务器资源更加紧张。不利于单个Web站点的管理。</p><p>针对上述场景的产生，需要将Web站点进行分散，并需要将分散所创建的路径（目录）交给Web服务器管理（Tomcat） <strong>: 虚拟目录的映射</strong></p><h4 id="2-配置虚拟主机"><a href="#2-配置虚拟主机" class="headerlink" title="2.  配置虚拟主机"></a>2.  配置虚拟主机</h4><p>配置虚拟主机是解决多个网站多个域名公用一台服务器的场景，一般来讲一个Tomcat只运行一个网站。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> TomCat </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> WEB应用服务器 </tag>
             
         </tags>
       

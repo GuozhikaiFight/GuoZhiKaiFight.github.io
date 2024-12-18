@@ -414,56 +414,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title" >
-      <a href="/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/">
-        TomCat杂项
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Tomcat杂项
-Tomcat简单来讲是一个Web服务器，同时也是一个存放JSP与SERLVET的容器
-
-Tomcat中不常见的操作1.  配置虚拟目录配置虚拟目录的产生是因为如果存在多个Web站点，并且在服务器资源有限的情况之下，依照默认的做法需要将所有的Web站点存放于WebApps目录之下，这样会导致服务器资源更加紧张。不利于单个Web站点的管理。
-针对上述场景的产生，需要将Web站点...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-03-20</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/TomCat/">TomCat</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
       <a href="/2021/03/20/Spring/">
         Spring
       </a>
@@ -496,6 +446,56 @@ Tomcat中不常见的操作1.  配置虚拟目录配置虚拟目录的产生是�
       
         <div>
           <a class='readmore' href='/2021/03/20/Spring/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
+  
+  
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/">
+        TomCat杂项
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        Tomcat杂项
+Tomcat简单来讲是一个Web服务器，同时也是一个存放JSP与SERLVET的容器
+
+Tomcat中不常见的操作1.  配置虚拟目录配置虚拟目录的产生是因为如果存在多个Web站点，并且在服务器资源有限的情况之下，依照默认的做法需要将所有的Web站点存放于WebApps目录之下，这样会导致服务器资源更加紧张。不利于单个Web站点的管理。
+针对上述场景的产生，需要将Web站点...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time>2021-03-20</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/TomCat/">TomCat</a>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/'>
             阅读全文
           </a>
         </div>
@@ -1252,7 +1252,7 @@ function setSearchService() {
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'https://gitlab.com/1792097009gker/gkerblog.git' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'https://github.com/GuozhikaiFight/GuoZhiKaiFight.github.io.git' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -1270,7 +1270,7 @@ function setSearchService() {
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'https://gitlab.com/1792097009gker/gkerblog.git' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'https://github.com/GuozhikaiFight/GuoZhiKaiFight.github.io.git' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -1292,7 +1292,7 @@ function setSearchService() {
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'https://gitlab.com/1792097009gker/gkerblog.git' + pv.getAttribute('data-path');
+          var url = 'https://github.com/GuozhikaiFight/GuoZhiKaiFight.github.io.git' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增

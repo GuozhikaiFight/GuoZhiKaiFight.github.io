@@ -709,10 +709,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 						<h2>2021</h2>
 					
 						<div class='timenode'>
-								<a class="meta" href="/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/">
+								<a class="meta" href="/2021/03/20/Spring/">
 									<time>03-20</time>
 									
-										TomCat杂项
+										Spring
 									
 									
 									
@@ -725,10 +725,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 				
 					
 						<div class='timenode'>
-								<a class="meta" href="/2021/03/20/Spring/">
+								<a class="meta" href="/2021/03/20/TomCat%E6%9D%82%E9%A1%B9/">
 									<time>03-20</time>
 									
-										Spring
+										TomCat杂项
 									
 									
 									
@@ -1475,7 +1475,7 @@ function setSearchService() {
       // 请求 PV 并自增
       var pvCtn = document.querySelector('#lc-sv');
       if (pvCtn || enableIncr) {
-        var pvGetter = this.getRecord(Counter, 'https://gitlab.com/1792097009gker/gkerblog.git' + '/#lc-sv', 'Visits').then((record) => {
+        var pvGetter = this.getRecord(Counter, 'https://github.com/GuozhikaiFight/GuoZhiKaiFight.github.io.git' + '/#lc-sv', 'Visits').then((record) => {
           incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-sv #number');
           if (eles.length > 0) {
@@ -1493,7 +1493,7 @@ function setSearchService() {
       // 请求 UV 并自增
       var uvCtn = document.querySelector('#lc-uv');
       if (uvCtn || enableIncr) {
-        var uvGetter = this.getRecord(Counter, 'https://gitlab.com/1792097009gker/gkerblog.git' + '/#lc-uv', 'Visitors').then((record) => {
+        var uvGetter = this.getRecord(Counter, 'https://github.com/GuozhikaiFight/GuoZhiKaiFight.github.io.git' + '/#lc-uv', 'Visitors').then((record) => {
           var vuv = this.validUV();
           vuv && incrArr.push(this.buildIncrement(record.objectId))
           var eles = document.querySelectorAll('#lc-uv #number');
@@ -1515,7 +1515,7 @@ function setSearchService() {
         for (i = 0; i < allPV.length; i++) {
           let pv = allPV[i];
           let title = pv.getAttribute('data-title');
-          var url = 'https://gitlab.com/1792097009gker/gkerblog.git' + pv.getAttribute('data-path');
+          var url = 'https://github.com/GuozhikaiFight/GuoZhiKaiFight.github.io.git' + pv.getAttribute('data-path');
           if (url) {
             var viewGetter = this.getRecord(Counter, url, title).then((record) => {
               // 是当前页面就自增
